@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+    --main-font-family: 'Syne';
+    --sec-font-family: 'Overpass';
+    /* Subtitles */
+    --sub-font-family: 'Poppins';
+    --sub-font-style: normal;
+    --sub-font-weight: 400;
+    --sub-font-size: 23px;
+    --sub-line-height: 120%;
+    /* Farben */
+    --color-white: #FFFCF3;
+    --color-green: #00BC8F;
+    --color-black: #2f2f2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+}
+
+// .subtitles {
+//     font-family: var(--sub-font-family);
+//     font-style: var(--sub-font-style);
+//     font-weight: var(--sub-font-weight);
+//     font-size: var(--sub-font-size);
+//     line-height: var(--sub-line-height);
+// }

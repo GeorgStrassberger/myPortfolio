@@ -1,0 +1,57 @@
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-inline: 32px;
+    padding-block: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .links {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            display: flex;
+            border-radius: 6px;
+            height: 40px;
+            transition: all 275ms linear ease-in;
+        }
+        a:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+    }
+    .bot-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        a {
+            text-decoration: none;
+            color: var(--color-white);
+            border-bottom: var(--color-black) 2px solid;
+        }
+        a:hover {
+            color: var(--color-green);
+            border-bottom: #00BC8F 2px solid;
+        }
+    }
+}
+
+.subtitles {
+    font-family: var(--sub-font-family);
+    font-style: var(--sub-font-style);
+    font-weight: var(--sub-font-weight);
+    font-size: var(--sub-font-size);
+    line-height: var(--sub-line-height);
+}
