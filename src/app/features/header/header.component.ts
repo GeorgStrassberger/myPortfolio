@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+
   isOpen: boolean = false;
   index: number = 0;
   MENU_IMAGES: string[] = [
@@ -15,23 +16,21 @@ export class HeaderComponent implements OnInit {
     '../../../assets/images/menu/menu4.png',
     '../../../assets/images/menu/menu5.png'
   ];
-  // menu = document.getElementById('menu')as HTMLImageElement;
-  // kopf = document.getElementById('kopf') as HTMLElement;
-  // top = document.getElementById('top') as HTMLDivElement;
-  // bot = document.getElementById('bot') as HTMLDivElement;
+
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
   toggleMenu(){
     if(!this.isOpen){
-      this.openMenuAnimation(this.index);
+      this.openMenuAnimation();
       this.openMenu();
       this.isOpen = true;
     }else{
-      this.closeMenuAnimation(this.index);
+      this.closeMenuAnimation();
       this.closeMenu();
       this.isOpen = false;
     }    
@@ -46,11 +45,8 @@ export class HeaderComponent implements OnInit {
     kopf.classList.add('collapsible');
     top.classList.add('animateContent');
     bot.classList.add('animateFooter');
-
-    // this.kopf.classList.add('collapsible');
-    // this.top.classList.add('animateContent');
-    // this.bot.classList.add('animateFooter');
   }
+
 
   closeMenu(){
     let kopf = document.getElementById('kopf') as HTMLDivElement;
@@ -62,16 +58,14 @@ export class HeaderComponent implements OnInit {
     },1000)
     top.classList.remove('animateContent');
     bot.classList.remove('animateFooter');
-
-
   }
 
 
-  openMenuAnimation(index: number) {
+  openMenuAnimation() {
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
         this.index++
-        menu.src = this.MENU_IMAGES[index];
+        menu.src = this.MENU_IMAGES[this.index];
         if (this.index == 4) {
             clearInterval(TIMER);
         }
@@ -79,11 +73,11 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  closeMenuAnimation(index:number) {
+  closeMenuAnimation() {
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
       this.index--
-      menu.src = this.MENU_IMAGES[index];
+      menu.src = this.MENU_IMAGES[this.index];
       if (this.index == 0) {
           clearInterval(TIMER);
       }
@@ -93,7 +87,7 @@ export class HeaderComponent implements OnInit {
 
   goToSection(sectionID:string){
     document.location = '#' + sectionID;
-    this.closeMenuAnimation(this.index);
+    this.closeMenuAnimation();
     this.closeMenu();
   }
 }
