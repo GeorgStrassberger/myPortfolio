@@ -27,9 +27,11 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu(){
     if(!this.isOpen){
+      this.openMenuAnimation(this.index);
       this.openMenu();
       this.isOpen = true;
     }else{
+      this.closeMenuAnimation(this.index);
       this.closeMenu();
       this.isOpen = false;
     }    
@@ -37,8 +39,6 @@ export class HeaderComponent implements OnInit {
 
 
   openMenu(){
-    this.openMenuAnimation(this.index);
-
     let kopf = document.getElementById('kopf') as HTMLDivElement;
     let top = document.getElementById('top') as HTMLDivElement;
     let bot = document.getElementById('bot') as HTMLDivElement;
@@ -53,8 +53,6 @@ export class HeaderComponent implements OnInit {
   }
 
   closeMenu(){
-    this.closeMenuAnimation(this.index);
-
     let kopf = document.getElementById('kopf') as HTMLDivElement;
     let top = document.getElementById('top') as HTMLDivElement;
     let bot = document.getElementById('bot') as HTMLDivElement;
@@ -64,6 +62,8 @@ export class HeaderComponent implements OnInit {
     },1000)
     top.classList.remove('animateContent');
     bot.classList.remove('animateFooter');
+
+
   }
 
 
@@ -72,7 +72,7 @@ export class HeaderComponent implements OnInit {
     const TIMER = setInterval(() => {
         this.index++
         menu.src = this.MENU_IMAGES[index];
-        if (this.index >= 4) {
+        if (this.index == 4) {
             clearInterval(TIMER);
         }
     }, 100);
@@ -84,7 +84,7 @@ export class HeaderComponent implements OnInit {
     const TIMER = setInterval(() => {
       this.index--
       menu.src = this.MENU_IMAGES[index];
-      if (this.index <= 0) {
+      if (this.index == 0) {
           clearInterval(TIMER);
       }
     }, 100);
@@ -93,6 +93,7 @@ export class HeaderComponent implements OnInit {
 
   goToSection(sectionID:string){
     document.location = '#' + sectionID;
+    this.closeMenuAnimation(this.index);
     this.closeMenu();
   }
 }
