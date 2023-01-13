@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   isOpen: boolean = false;
-  index: number = 0;
+  
   MENU_IMAGES: string[] = [
     '../../../assets/images/menu/menu1.png',
     '../../../assets/images/menu/menu2.png',
@@ -23,6 +23,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  disableClick(){
+    let menu = document.getElementById('menu') as HTMLImageElement;
+    menu.classList.add('disabledbutton');
+    setTimeout(() => {
+      menu?.classList.remove('disabledbutton');
+    }, 1000);
+  }
+
 
   toggleMenu(){
     if(!this.isOpen){
@@ -33,7 +41,8 @@ export class HeaderComponent implements OnInit {
       this.closeMenuAnimation();
       this.closeMenu();
       this.isOpen = false;
-    }    
+    }
+    this.disableClick();    
   }
 
 
@@ -62,26 +71,31 @@ export class HeaderComponent implements OnInit {
 
 
   openMenuAnimation() {
+    let i = 0;
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
-        this.index++
-        menu.src = this.MENU_IMAGES[this.index];
-        if (this.index == 4) {
+        i++
+        menu.src = this.MENU_IMAGES[i];
+        if (i === 4) {
             clearInterval(TIMER);
         }
     }, 100);
+    this.isOpen = true;
   }
 
 
   closeMenuAnimation() {
+    let i = 4;
+
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
-      this.index--
-      menu.src = this.MENU_IMAGES[this.index];
-      if (this.index == 0) {
+      i--;
+      menu.src = this.MENU_IMAGES[i];
+      if (i === 0) {
           clearInterval(TIMER);
       }
     }, 100);
+    this.isOpen = false;
   }
 
 
@@ -89,5 +103,10 @@ export class HeaderComponent implements OnInit {
     document.location = '#' + sectionID;
     this.closeMenuAnimation();
     this.closeMenu();
+  }
+
+  disableBtn(){
+    const menu = document.getElementById('menu') as HTMLDivElement;
+    menu.ariaDisabled
   }
 }

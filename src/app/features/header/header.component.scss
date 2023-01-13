@@ -187,3 +187,7 @@ section {
         color: var(--color-green);
     }
 }
+
+.disabledbutton {
+    pointer-events: none;
+}
