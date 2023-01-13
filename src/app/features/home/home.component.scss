@@ -1,0 +1,109 @@
+section {
+    position: relative;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 16px;
+    padding-inline: 32px;
+    .headline {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        text-align: center;
+        font-family: 'Syne';
+        font-size: 128px;
+        line-height: 100%;
+        letter-spacing: -0.025em;
+        .subline {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 48px;
+            .line {
+                height: 0;
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                width: 100%;
+                border: 2px solid var(--color-black);
+            }
+            .name {
+                right: 0;
+                z-index: 2;
+                padding-left: 16px;
+                background-color: var(--color-white);
+                position: absolute;
+                color: var(--color-green);
+                font-family: "Overpass";
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 100%;
+                letter-spacing: -0.025em;
+            }
+        }
+    }
+    .email {
+        position: absolute;
+        bottom: 16px;
+        left: 32px;
+        // writing-mode: vertical-lr;
+        transform: rotate(270deg) translate(0%, 0%);
+        transform-origin: 0 0;
+    }
+    .scroll-wrapper {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .arrow-wrapper {
+            position: relative;
+            height: 100px;
+            width: 100%;
+            overflow: hidden;
+            .arrow {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                animation: arrowDown 2.5s linear 0s infinite normal none;
+                img {
+                    width: 40px;
+                    height: 60px;
+                }
+            }
+            .arrow:hover {
+                animation-play-state: paused;
+            }
+        }
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Overpass';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 23px;
+            line-height: 100%;
+            align-items: center;
+            letter-spacing: -0.025em;
+        }
+    }
+}
+
+@keyframes arrowDown {
+    0% {
+        bottom: 130px;
+    }
+    100% {
+        bottom: -80px;
+    }
+}

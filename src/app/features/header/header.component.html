@@ -1,1 +1,39 @@
-<p>header works!</p>
+<section id="kopf">
+
+    <div class="nav-wrapper">
+
+        <img (click)="goToSection('home')" src="../../../assets/images/icons/logo_black.png">
+
+        <img (click)="toggleMenu()" src="../../../assets/images/menu/menu1.png">
+    </div>
+
+
+    <div id="top" class="top-wrapper">
+        <!-- Alles von oben -->
+        <div class="box">
+            <span (click)="goToSection('home')">Home</span>
+        </div>
+        <div class="box">
+            <span (click)="goToSection('aboutMe')">About Me</span>
+        </div>
+        <div class="box">
+            <span (click)="goToSection('mySkills')">My skills</span>
+        </div>
+        <div class="box">
+            <span (click)="goToSection('portfolio')">Portfolio</span>
+        </div>
+        <div class="box">
+            <span (click)="goToSection('contact')">Contact</span>
+        </div>
+    </div>
+
+
+    <div id="bot" class="bottem-wrapper">
+        <!-- Alles von unten -->
+
+        <div class="triangle"></div>
+        <app-footer></app-footer>
+    </div>
+
+
+</section>

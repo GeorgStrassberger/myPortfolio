@@ -16,11 +16,16 @@ section {
     left: 50%;
     transform: translateX(-50%);
     h2 {
+        width: 550px;
         font-family: 'Syne';
         font-style: normal;
         font-weight: 800;
         font-size: 78px;
         line-height: 100%;
+        transition: all 125ms ease-in-out;
+        &:hover {
+            color: var(--color-green);
+        }
     }
 }
 
@@ -42,11 +47,50 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    span {
-        font-family: 'Overpass';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 120%;
+    color: var(--color-black);
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    transition: all 125ms ease-in-out;
+    overflow: hidden;
+    mix-blend-mode: luminosity;
+    img {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.cell:hover {
+    color: var(--color-green);
+    mix-blend-mode: normal;
+}
+
+.cell:hover img {
+    animation-name: moveImage;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    // animation-delay: unset;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(+50%) scale(0.9);
+    }
+    50% {
+        transform: translateX(0) scale(0.8);
+    }
+    75% {
+        transform: translateX(-50%) scale(0.9);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

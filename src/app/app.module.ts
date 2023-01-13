@@ -10,6 +10,9 @@ import { HomeComponent } from './features/home/home.component';
 import { HeaderComponent } from './features/header/header.component';
 import { AboutMeComponent } from './features/about-me/about-me.component';
 import { SkillsComponent } from './features/skills/skills.component';
+import { ArrowDownLeftComponent } from './features/arrow-down-left/arrow-down-left.component';
+import { ArrowDownRightComponent } from './features/arrow-down-right/arrow-down-right.component';
+import { ProjectComponent } from './features/projects/project/project.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { SkillsComponent } from './features/skills/skills.component';
     HomeComponent,
     HeaderComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ArrowDownLeftComponent,
+    ArrowDownRightComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

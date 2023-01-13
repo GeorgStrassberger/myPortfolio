@@ -1,0 +1,59 @@
+section {
+    position: relative;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: end;
+    height: 150px;
+    .wrapper {
+        position: absolute;
+        left: 200px;
+        top: 0px;
+        height: 100px;
+        width: 100px;
+        animation-name: growRight;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes growRight {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+        height: 50px;
+        width: 50px;
+    }
+    30% {
+        opacity: 1;
+        height: 100px;
+        width: 100px;
+    }
+    50% {
+        opacity: 1;
+        height: 150px;
+        width: 150px;
+        left: 200px;
+        top: 0px;
+    }
+    80% {
+        opacity: 1;
+        height: 100px;
+        width: 100px;
+    }
+    100% {
+        opacity: 0;
+        height: 50px;
+        width: 50px;
+        left: 300px;
+        top: 100px;
+    }
+}

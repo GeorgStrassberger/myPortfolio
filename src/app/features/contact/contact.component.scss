@@ -7,7 +7,7 @@ section {
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 100px 0 0 200vh;
+    border-width: 100px 0 0 100vw;
     border-color: transparent transparent transparent var(--color-black);
 }
 
@@ -121,14 +121,12 @@ section {
         height: 100px;
         width: 40px;
         overflow: hidden;
-        // border: 1px solid white;
     }
     .arrow {
         position: absolute;
         bottom: 0px;
         width: 100%;
         animation: arrowUp 2.5s linear 0s infinite normal none;
-        // animation: name duration timing-function delay iteration-count direction fill-mode;
     }
     .arrow:hover {
         animation-play-state: paused;
