@@ -23,30 +23,30 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  disableClick(){
+  disableClick(time: number){
     let menu = document.getElementById('menu') as HTMLImageElement;
     menu.classList.add('disabledbutton');
     setTimeout(() => {
-      menu?.classList.remove('disabledbutton');
-    }, 1000);
+      menu.classList.remove('disabledbutton');
+    }, time);
   }
 
 
-  toggleMenu(){
+  toggleMenuBtn(){
     if(!this.isOpen){
-      this.openMenuAnimation();
-      this.openMenu();
+      this.openImageAnimation();
+      this.openNavMenu();
       this.isOpen = true;
     }else{
-      this.closeMenuAnimation();
-      this.closeMenu();
+      this.closeImageAnimation();
+      this.closeNavMenu();
       this.isOpen = false;
     }
-    this.disableClick();    
+    this.disableClick(1000);    
   }
 
 
-  openMenu(){
+  openNavMenu(){
     let kopf = document.getElementById('kopf') as HTMLDivElement;
     let top = document.getElementById('top') as HTMLDivElement;
     let bot = document.getElementById('bot') as HTMLDivElement;
@@ -57,7 +57,7 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  closeMenu(){
+  closeNavMenu(){
     let kopf = document.getElementById('kopf') as HTMLDivElement;
     let top = document.getElementById('top') as HTMLDivElement;
     let bot = document.getElementById('bot') as HTMLDivElement;
@@ -70,7 +70,7 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  openMenuAnimation() {
+  openImageAnimation() {
     let i = 0;
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
@@ -84,9 +84,8 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  closeMenuAnimation() {
+  closeImageAnimation() {
     let i = 4;
-
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
       i--;
@@ -101,8 +100,9 @@ export class HeaderComponent implements OnInit {
 
   goToSection(sectionID:string){
     document.location = '#' + sectionID;
-    this.closeMenuAnimation();
-    this.closeMenu();
+    this.closeImageAnimation();
+    this.closeNavMenu();
+    this.disableClick(1000);
   }
 
   disableBtn(){

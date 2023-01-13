@@ -124,7 +124,7 @@ section {
 @keyframes border {
     0% {
         /* top: 70%; */
-        right: 270px;
+        right: 470px;
         transform: translateY(0);
     }
     50% {
@@ -190,4 +190,5 @@ section {
 
 .disabledbutton {
     pointer-events: none;
+    cursor: not-allowed !important;
 }
