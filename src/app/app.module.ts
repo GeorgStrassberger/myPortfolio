@@ -15,6 +15,7 @@ import { ArrowDownRightComponent } from './features/arrow-down-right/arrow-down-
 import { ProjectComponent } from './features/projects/project/project.component';
 import { ImprintComponent } from './features/imprint/imprint.component';
 import { DataProtectionComponent } from './features/data-protection/data-protection.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DataProtectionComponent } from './features/data-protection/data-protect
     ArrowDownRightComponent,
     ProjectComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

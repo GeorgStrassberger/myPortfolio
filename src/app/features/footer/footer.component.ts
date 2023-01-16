@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public navService:NavigationService,
+  ) { }
 
   ngOnInit(): void {
   }
 
+  scrollToID(id: string){
+    this.navService.locateSection(id)
+  }
 }

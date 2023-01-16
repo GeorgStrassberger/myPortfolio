@@ -1,6 +1,6 @@
 section {
     position: relative;
-    height: 60px;
+    height: var(--header-height);
     width: 100%;
     display: flex;
     overflow: hidden;
@@ -14,7 +14,7 @@ section {
         justify-content: space-between;
         align-items: center;
         padding-inline: 32px;
-        height: 60px;
+        height: var(--header-height);
         width: 100%;
         img {
             height: 40px;
