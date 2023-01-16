@@ -2,35 +2,32 @@
 
     <div class="nav-wrapper">
 
-        <img (click)="goToSection('home')" src="../../../assets/images/icons/logo_black.png">
+        <img (click)="scrollToID('home')" src="../../../assets/images/icons/logo_black.png">
 
         <img id="menu" (click)="toggleMenuBtn()" src={{MENU_IMAGES[0]}}>
     </div>
-    <!-- src="../../../assets/images/menu/menu1.png" -->
 
     <div id="top" class="top-wrapper">
         <!-- Alles von oben -->
         <div class="box">
-            <span (click)="goToSection('home')">Home</span>
+            <span (click)="scrollToID('home')">Home</span>
         </div>
         <div class="box">
-            <span (click)="goToSection('aboutMe')">About Me</span>
+            <span (click)="scrollToID('aboutMe')">About Me</span>
         </div>
         <div class="box">
-            <span (click)="goToSection('mySkills')">My skills</span>
+            <span (click)="scrollToID('mySkills')">My skills</span>
         </div>
         <div class="box">
-            <span (click)="goToSection('portfolio')">Portfolio</span>
+            <span (click)="scrollToID('portfolio')">Portfolio</span>
         </div>
         <div class="box">
-            <span (click)="goToSection('contact')">Contact</span>
+            <span (click)="scrollToID('contact')">Contact</span>
         </div>
     </div>
 
-
     <div id="bot" class="bottem-wrapper">
         <!-- Alles von unten -->
-
         <div class="triangle"></div>
         <app-footer></app-footer>
     </div>

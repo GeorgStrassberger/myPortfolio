@@ -133,15 +133,11 @@ section {
         /* transform: translateY(10px); */
     }
     100% {
-        /* top: 80%; */
         right: 4px;
         transform: translateY(25px);
     }
 }
 
-//##########################################
-// BUTTONS
-//##########################################
 .box {
     position: relative;
     display: flex;
@@ -186,9 +182,4 @@ section {
     &:hover span {
         color: var(--color-green);
     }
-}
-
-.disabledbutton {
-    pointer-events: none;
-    cursor: not-allowed !important;
 }

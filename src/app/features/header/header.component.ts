@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
   selector: 'app-header',
@@ -18,19 +19,11 @@ export class HeaderComponent implements OnInit {
   ];
 
   
-  constructor() { }
+  constructor( public navService: NavigationService) { }
 
   ngOnInit(): void {
   }
-
-  disableClick(time: number){
-    let menu = document.getElementById('menu') as HTMLImageElement;
-    menu.classList.add('disabledbutton');
-    setTimeout(() => {
-      menu.classList.remove('disabledbutton');
-    }, time);
-  }
-
+  
 
   toggleMenuBtn(){
     if(!this.isOpen){
@@ -42,7 +35,7 @@ export class HeaderComponent implements OnInit {
       this.closeNavMenu();
       this.isOpen = false;
     }
-    this.disableClick(1000);    
+    this.navService.disabledClickFor(1000, 'menu'); 
   }
 
 
@@ -98,15 +91,8 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  goToSection(sectionID:string){
-    document.location = '#' + sectionID;
-    this.closeImageAnimation();
-    this.closeNavMenu();
-    this.disableClick(1000);
-  }
-
-  disableBtn(){
-    const menu = document.getElementById('menu') as HTMLDivElement;
-    menu.ariaDisabled
+  scrollToID(id: string){
+    this.navService.locateSection(id)
+    this.toggleMenuBtn();
   }
 }

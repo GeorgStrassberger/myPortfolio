@@ -42,10 +42,6 @@ body {
     }
 }
 
-// .subtitles {
-//     font-family: var(--sub-font-family);
-//     font-style: var(--sub-font-style);
-//     font-weight: var(--sub-font-weight);
-//     font-size: var(--sub-font-size);
-//     line-height: var(--sub-line-height);
-// }
+.disabledbutton {
+    pointer-events: none;
+}

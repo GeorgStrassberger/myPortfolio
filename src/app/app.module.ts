@@ -13,6 +13,8 @@ import { SkillsComponent } from './features/skills/skills.component';
 import { ArrowDownLeftComponent } from './features/arrow-down-left/arrow-down-left.component';
 import { ArrowDownRightComponent } from './features/arrow-down-right/arrow-down-right.component';
 import { ProjectComponent } from './features/projects/project/project.component';
+import { ImprintComponent } from './features/imprint/imprint.component';
+import { DataProtectionComponent } from './features/data-protection/data-protection.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProjectComponent } from './features/projects/project/project.component'
     SkillsComponent,
     ArrowDownLeftComponent,
     ArrowDownRightComponent,
-    ProjectComponent
+    ProjectComponent,
+    ImprintComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,
