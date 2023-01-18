@@ -1,12 +1,5 @@
 <section id="kopf">
 
-    <div class="nav-wrapper">
-
-        <img (click)="scrollToID('home')" src="../../../assets/images/icons/logo_black.png">
-
-        <img id="menu" (click)="toggleMenuBtn()" src={{MENU_IMAGES[0]}}>
-    </div>
-
     <div id="top" class="top-wrapper">
         <!-- Alles von oben -->
         <div class="box">
@@ -25,6 +18,15 @@
             <span (click)="scrollToID('contact')">Contact</span>
         </div>
     </div>
+
+
+    <div class="nav-wrapper">
+
+        <img (click)="scrollToID('home')" src="../../../assets/images/icons/logo_black.png">
+
+        <img id="menu" (click)="toggleMenuBtn()" src={{MENU_IMAGES[0]}}>
+    </div>
+
 
     <div id="bot" class="bottem-wrapper">
         <!-- Alles von unten -->

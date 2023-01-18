@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
   selector: 'app-data-protection',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataProtectionComponent implements OnInit {
 
-  constructor() { }
+  constructor( public navService:NavigationService ) { }
 
   ngOnInit(): void {
   }
 
+  scrollToID(id: string){
+    this.navService.locateSection(id);
+  }
 }

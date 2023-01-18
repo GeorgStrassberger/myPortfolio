@@ -19,10 +19,8 @@ const routes: Routes = [
   // { path: 'skills' , component: SkillsComponent },
   // { path: 'projects' , component: ProjectsComponent },
   // { path: 'contact' , component: ContactComponent },
-  // { path: 'footer' , component: FooterComponent },
   { path: 'imprint' , component: ImprintComponent },
-  { path: 'data-protection' , component: DataProtectionComponent },
-  
+  { path: 'data-protection' , component: DataProtectionComponent }  
 ];
 
 @NgModule({

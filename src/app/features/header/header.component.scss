@@ -3,8 +3,28 @@ section {
     height: var(--header-height);
     width: 100%;
     display: flex;
+    flex-direction: column;
     overflow: hidden;
     transition: all 125ms ease-in-out;
+    .top-wrapper {
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        height: calc(100vh - var(--footer-height));
+        width: 100%;
+        background-color: var(--color-white);
+        animation-name: topFadeUp;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
     .nav-wrapper {
         background-color: var(--color-white);
         position: absolute;
@@ -20,25 +40,6 @@ section {
             height: 40px;
             cursor: pointer;
         }
-    }
-    .top-wrapper {
-        position: absolute;
-        top: 0;
-        transform: translateY(-100%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        height: 100vh;
-        width: 100%;
-        background-color: var(--color-white);
-        animation-name: topFadeUp;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
     }
     .bottem-wrapper {
         position: absolute;
