@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationService } from 'src/app/shared/services/navigation.service';
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
@@ -7,14 +7,11 @@ import { Router } from '@angular/router';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(
+    public navService: NavigationService
+    ) { }
 
   ngOnInit(): void {
   }
-
-  goToSection(section:string){
-    document.location = '#' + section;
-  }
-
 
 }

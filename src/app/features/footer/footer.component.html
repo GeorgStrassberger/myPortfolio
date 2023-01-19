@@ -1,12 +1,16 @@
 <footer class="subtitles">
     <div class="top-wrapper">
-        <a href="#">
+        <a routerLink="/#home" (click)="navService.forceNavigate('home')">
             <img src="../../../assets/images/icons/logo_white.png" alt="myLogo">
         </a>
         <div class="links">
             <a href="https://github.com/GeorgStrassberger" target="_blank"><img src="../../../assets/images/icons/github-8-48.png" alt="GitHub"></a>
-            <a href="#contect"><img src="../../../assets/images/icons/message-outline-48.png" alt="Mail"></a>
-            <a href="https://de.linkedin.com/in/georg-stra%C3%9Fberger-85b563196" target="_blank"><img src="../../../assets/images/icons/linkedin-3-48.ico" alt="LinkedIn"></a>
+            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')">
+                <img src="../../../assets/images/icons/message-outline-48.png" alt="Mail">
+            </a>
+            <a href="https://de.linkedin.com/in/georg-stra%C3%9Fberger-85b563196" target="_blank">
+                <img src="../../../assets/images/icons/linkedin-3-48.ico" alt="LinkedIn">
+            </a>
         </div>
     </div>
     <div class="bot-wrapper">

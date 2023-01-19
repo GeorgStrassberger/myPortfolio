@@ -24,6 +24,52 @@ section {
         animation-iteration-count: 1;
         animation-direction: normal;
         animation-fill-mode: forwards;
+        .box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 80px;
+            background: var(--color-white);
+            overflow: hidden;
+            cursor: pointer;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 60%;
+                right: 470px;
+                width: 500px;
+                height: 50px;
+                background-color: var(--color-black);
+            }
+            &:hover::before {
+                animation: border 0.5s linear 1;
+                animation-fill-mode: forwards;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 4px;
+                background: var(--color-white);
+            }
+            a {
+                text-decoration: none;
+                position: relative;
+                color: var(--color-black);
+                font-family: 'Syne';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 88px;
+                line-height: 100%;
+                letter-spacing: -0.025em;
+                z-index: 10;
+                transition: all 225ms ease-in-out;
+            }
+            &:hover a {
+                color: var(--color-green);
+            }
+        }
     }
     .nav-wrapper {
         background-color: var(--color-white);
@@ -36,6 +82,25 @@ section {
         padding-inline: 32px;
         height: var(--header-height);
         width: 100%;
+        .navAnker {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 32px;
+            a {
+                font-family: "Overpass";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 23px;
+                line-height: 120%;
+                color: var(--color-black);
+                text-decoration: none;
+                &:hover {
+                    color: var(--color-green);
+                }
+            }
+        }
         img {
             height: 40px;
             cursor: pointer;
@@ -136,51 +201,5 @@ section {
     100% {
         right: 4px;
         transform: translateY(25px);
-    }
-}
-
-.box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 80px;
-    background: var(--color-white);
-    overflow: hidden;
-    cursor: pointer;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 60%;
-        right: 470px;
-        width: 500px;
-        height: 50px;
-        background-color: var(--color-black);
-    }
-    &:hover::before {
-        animation: border 0.5s linear 1;
-        animation-fill-mode: forwards;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        inset: 4px;
-        background: var(--color-white);
-    }
-    span {
-        position: relative;
-        color: var(--color-black);
-        font-family: 'Syne';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 88px;
-        line-height: 100%;
-        letter-spacing: -0.025em;
-        z-index: 10;
-        transition: all 225ms ease-in-out;
-    }
-    &:hover span {
-        color: var(--color-green);
     }
 }

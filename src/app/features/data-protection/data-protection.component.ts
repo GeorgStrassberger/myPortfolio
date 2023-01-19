@@ -13,7 +13,4 @@ export class DataProtectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  scrollToID(id: string){
-    this.navService.locateSection(id);
-  }
 }

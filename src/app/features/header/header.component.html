@@ -1,29 +1,35 @@
-<section id="kopf">
+<section id="header">
 
     <div id="top" class="top-wrapper">
         <!-- Alles von oben -->
         <div class="box">
-            <span (click)="scrollToID('home')">Home</span>
+            <a routerLink="/#home" (click)="navService.forceNavigate('home'); closeBtnAnimation()">Home</a>
         </div>
         <div class="box">
-            <span (click)="scrollToID('aboutMe')">About Me</span>
+            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe'); closeBtnAnimation()">About me</a>
         </div>
         <div class="box">
-            <span (click)="scrollToID('mySkills')">My skills</span>
+            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills'); closeBtnAnimation()">My Skills</a>
         </div>
         <div class="box">
-            <span (click)="scrollToID('portfolio')">Portfolio</span>
+            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio'); closeBtnAnimation()">Portfolio</a>
         </div>
         <div class="box">
-            <span (click)="scrollToID('contact')">Contact</span>
+            <a routerLink="/#contact" (click)="navService.forceNavigate('contact'); closeBtnAnimation()">Contact</a>
         </div>
     </div>
 
 
     <div class="nav-wrapper">
-
-        <img (click)="scrollToID('home')" src="../../../assets/images/icons/logo_black.png">
-
+        <div class="navAnker">
+            <a routerLink="/#home" (click)="navService.forceNavigate('home')">
+                <img src="../../../assets/images/icons//logo_black.png" alt="myLogo">
+            </a>
+            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')">About me</a>
+            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')">My Skills</a>
+            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')">Portfolio</a>
+            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')">Contact</a>
+        </div>
         <img id="menu" (click)="toggleMenuBtn()" src={{MENU_IMAGES[0]}}>
     </div>
 

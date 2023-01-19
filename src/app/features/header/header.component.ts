@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { NavigationService } from 'src/app/shared/services/navigation.service';
 })
 export class HeaderComponent implements OnInit {
 
-  isOpen: boolean = false;
+  isMenuOpen: boolean = false;
   
   MENU_IMAGES: string[] = [
     '../../../assets/images/menu/menu1.png',
@@ -19,51 +20,30 @@ export class HeaderComponent implements OnInit {
   ];
 
   
-  constructor( public navService: NavigationService) { }
+  constructor( 
+    public navService: NavigationService, 
+    public router: Router
+    ) { }
 
   ngOnInit(): void {
   }
   
 
   toggleMenuBtn(){
-    if(!this.isOpen){
-      this.openImageAnimation();
-      this.openNavMenu();
-      this.isOpen = true;
+    if(!this.isMenuOpen){
+      this.openBtnAnimation();
+      this.navService.openNavMenu();
+      this.isMenuOpen = true;
     }else{
-      this.closeImageAnimation();
-      this.closeNavMenu();
-      this.isOpen = false;
+      this.closeBtnAnimation();
+      this.navService.closeNavMenu();
+      this.isMenuOpen = false;
     }
     this.navService.disabledClickFor(1000, 'menu'); 
   }
 
 
-  openNavMenu(){
-    let kopf = document.getElementById('kopf') as HTMLDivElement;
-    let top = document.getElementById('top') as HTMLDivElement;
-    let bot = document.getElementById('bot') as HTMLDivElement;
-
-    kopf.classList.add('collapsible');
-    top.classList.add('animateContent');
-    bot.classList.add('animateFooter');
-  }
-
-
-  closeNavMenu(){
-    let kopf = document.getElementById('kopf') as HTMLDivElement;
-    let top = document.getElementById('top') as HTMLDivElement;
-    let bot = document.getElementById('bot') as HTMLDivElement;
-
-    setTimeout(()=>{
-      kopf.classList.remove('collapsible');
-    },1000)
-    top.classList.remove('animateContent');
-    bot.classList.remove('animateFooter');
-  }
-
-
-  openImageAnimation() {
+  openBtnAnimation() {
     let i = 0;
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
@@ -73,11 +53,10 @@ export class HeaderComponent implements OnInit {
             clearInterval(TIMER);
         }
     }, 100);
-    this.isOpen = true;
   }
 
 
-  closeImageAnimation() {
+  closeBtnAnimation() {
     let i = 4;
     const menu = document.getElementById('menu')as HTMLImageElement;
     const TIMER = setInterval(() => {
@@ -87,12 +66,6 @@ export class HeaderComponent implements OnInit {
           clearInterval(TIMER);
       }
     }, 100);
-    this.isOpen = false;
   }
 
-
-  scrollToID(id: string){
-    this.navService.locateSection(id)
-    this.toggleMenuBtn();
-  }
 }

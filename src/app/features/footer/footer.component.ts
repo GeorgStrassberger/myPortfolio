@@ -15,7 +15,4 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  scrollToID(id: string){
-    this.navService.locateSection(id)
-  }
 }
