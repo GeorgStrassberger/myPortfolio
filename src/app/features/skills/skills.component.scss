@@ -5,89 +5,100 @@ section {
     padding-top: 42px;
     padding-inline: 32px;
     padding-bottom: 16px;
-}
-
-.headline {
-    background-color: var(--color-white);
-    position: absolute;
-    z-index: 2;
-    padding-inline: 16px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    h2 {
-        width: 550px;
-        font-family: 'Syne';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 78px;
-        line-height: 100%;
-        transition: all 125ms ease-in-out;
-        &:hover {
-            color: var(--color-green);
-        }
-    }
-}
-
-.wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 32px;
-    border: 2px solid black;
-    padding-top: 132px;
-    padding-inline: 32px;
-    padding-bottom: 80px;
-    .cell {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        color: var(--color-black);
-        font-family: 'Overpass';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 120%;
-        transition: all 125ms ease-in-out;
-        overflow: hidden;
-        mix-blend-mode: luminosity;
-        img {
-            height: 48px;
-            width: 48px;
-        }
-        &:hover {
-            color: var(--color-green);
-            mix-blend-mode: normal;
-            img {
-                animation-name: moveImage;
-                animation-duration: 0.5s;
-                animation-timing-function: linear;
-                // animation-delay: unset;
-                animation-fill-mode: both;
-                animation-iteration-count: 1;
-                animation-play-state: running;
+    .headline {
+        background-color: var(--color-white);
+        position: absolute;
+        z-index: 2;
+        padding-inline: 16px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        h2 {
+            width: 550px;
+            font-family: 'Syne';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 78px;
+            line-height: 100%;
+            transition: all 125ms ease-in-out;
+            &:hover {
+                color: var(--color-green);
             }
         }
     }
-}
-
-@keyframes moveImage {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(+50%) scale(0.9);
-    }
-    50% {
-        transform: translateX(0) scale(0.8);
-    }
-    75% {
-        transform: translateX(-50%) scale(0.9);
-    }
-    100% {
-        transform: translateX(0);
+    .wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "html css js git api" " ts ng material firebase scrum";
+        gap: 32px;
+        border: 2px solid black;
+        padding-top: 132px;
+        padding-inline: 32px;
+        padding-bottom: 80px;
+        .html {
+            grid-area: html;
+        }
+        .css {
+            grid-area: css;
+        }
+        .ng {
+            grid-area: ng
+        }
+        .git {
+            grid-area: git;
+        }
+        .js {
+            grid-area: js;
+        }
+        .scrum {
+            grid-area: scrum;
+        }
+        .api {
+            grid-area: api;
+        }
+        .material {
+            grid-area: material;
+        }
+        .firebase {
+            grid-area: firebase;
+        }
+        .ts {
+            grid-area: ts;
+        }
+        .cell {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-black);
+            font-family: 'Overpass';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            transition: all 125ms ease-in-out;
+            overflow: hidden;
+            mix-blend-mode: luminosity;
+            img {
+                height: 48px;
+                width: 48px;
+            }
+            &:hover {
+                color: var(--color-green);
+                mix-blend-mode: normal;
+                img {
+                    animation-name: moveImage;
+                    animation-duration: 0.5s;
+                    animation-timing-function: linear;
+                    // animation-delay: unset;
+                    animation-fill-mode: both;
+                    animation-iteration-count: 1;
+                    animation-play-state: running;
+                }
+            }
+        }
     }
 }

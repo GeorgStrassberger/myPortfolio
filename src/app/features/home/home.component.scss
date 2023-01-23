@@ -17,7 +17,6 @@ section {
         font-family: 'Syne';
         font-size: 128px;
         line-height: 100%;
-        letter-spacing: -0.025em;
         .subline {
             display: flex;
             align-items: center;
@@ -43,7 +42,6 @@ section {
                 font-weight: 700;
                 font-size: 48px;
                 line-height: 100%;
-                letter-spacing: -0.025em;
             }
         }
     }
@@ -105,5 +103,111 @@ section {
     }
     100% {
         bottom: -80px;
+    }
+}
+
+// No media query since the xxl breakpoint has no upper bound on its width
+// X-Large devices (large desktops, less than 1400px)
+// @media (max-width: 1399.98px) {
+//     section {
+//     }
+// }
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    section {
+        .headline {
+            font-size: 80px;
+            .subline {
+                width: 100%;
+                height: 48px;
+                .name {
+                    padding-left: 16px;
+                    font-size: 40px;
+                }
+            }
+        }
+        .email {
+            position: absolute;
+            bottom: 16px;
+            left: 32px;
+            // writing-mode: vertical-lr;
+            transform: rotate(270deg) translate(0%, 0%);
+            transform-origin: 0 0;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    section {
+        .headline {
+            font-size: 72px;
+            .subline {
+                width: 100%;
+                height: 48px;
+                .name {
+                    padding-left: 16px;
+                    font-size: 40px;
+                }
+            }
+        }
+        .email {
+            position: absolute;
+            bottom: 16px;
+            left: 32px;
+            // writing-mode: vertical-lr;
+            transform: rotate(270deg) translate(0%, 0%);
+            transform-origin: 0 0;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    section {
+        .headline {
+            font-size: 56px;
+            .subline {
+                width: 100%;
+                height: 48px;
+                .name {
+                    padding-left: 16px;
+                    font-size: 32px;
+                }
+            }
+        }
+        .email {
+            position: absolute;
+            bottom: 16px;
+            left: 32px;
+            // writing-mode: vertical-lr;
+            transform: rotate(270deg) translate(0%, 0%);
+            transform-origin: 0 0;
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    section {
+        .headline {
+            font-size: 40px;
+            .subline {
+                width: 100%;
+                height: 48px;
+                .name {
+                    padding-left: 16px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .email {
+            position: absolute;
+            bottom: 16px;
+            left: 32px;
+            // writing-mode: vertical-lr;
+            transform: rotate(270deg) translate(0%, 0%);
+            transform-origin: 0 0;
+        }
     }
 }

@@ -1,0 +1,17 @@
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(+50%) scale(0.9);
+    }
+    50% {
+        transform: translateX(0) scale(0.8);
+    }
+    75% {
+        transform: translateX(-50%) scale(0.9);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

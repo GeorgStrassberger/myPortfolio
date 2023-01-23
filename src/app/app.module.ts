@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { ContactComponent } from './features/contact/contact.component';
-import { ProjectsComponent } from './features/projects/projects.component';
+import { PortfolioComponent } from './features/portfolio/portfolio.component';
 import { HomeComponent } from './features/home/home.component';
 import { HeaderComponent } from './features/header/header.component';
 import { AboutMeComponent } from './features/about-me/about-me.component';
 import { SkillsComponent } from './features/skills/skills.component';
 import { ArrowDownLeftComponent } from './features/arrow-down-left/arrow-down-left.component';
 import { ArrowDownRightComponent } from './features/arrow-down-right/arrow-down-right.component';
-import { ProjectComponent } from './features/projects/project/project.component';
+import { ProjectComponent } from './features/portfolio/project/project.component';
 import { ImprintComponent } from './features/imprint/imprint.component';
 import { DataProtectionComponent } from './features/data-protection/data-protection.component';
 import { LandingComponent } from './landing/landing.component';
@@ -22,7 +22,7 @@ import { LandingComponent } from './landing/landing.component';
     AppComponent,
     FooterComponent,
     ContactComponent,
-    ProjectsComponent,
+    PortfolioComponent,
     HomeComponent,
     HeaderComponent,
     AboutMeComponent,

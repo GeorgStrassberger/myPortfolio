@@ -1,0 +1,64 @@
+section {
+    background-color: var(--color-white);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .wrapper {
+        text-align: center;
+        h2 {
+            font-family: 'Syne';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 78px;
+            line-height: 100%;
+            transition: all 125ms ease-in-out;
+            &:hover {
+                color: var(--color-green);
+            }
+        }
+        p {
+            font-family: 'Overpass';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+        }
+    }
+}
+
+// No media query since the xxl breakpoint has no upper bound on its width
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    section {
+        background-color: aquamarine;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    section {
+        background-color: blue;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    section {
+        background-color: yellow;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    section {
+        background-color: green;
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    section {
+        background-color: red;
+    }
+}

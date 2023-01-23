@@ -21,10 +21,10 @@
 
 
     <div class="nav-wrapper">
+        <a routerLink="/#home" (click)="navService.forceNavigate('home')">
+            <img src="../../../assets/images/icons//logo_black.png" alt="myLogo">
+        </a>
         <div class="navAnker">
-            <a routerLink="/#home" (click)="navService.forceNavigate('home')">
-                <img src="../../../assets/images/icons//logo_black.png" alt="myLogo">
-            </a>
             <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')">About me</a>
             <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')">My Skills</a>
             <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')">Portfolio</a>
