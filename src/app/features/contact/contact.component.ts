@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
+
+
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
+
+
 export class ContactComponent implements OnInit {
 
- 
+
   constructor(
     public navService: NavigationService
   ) { }
@@ -31,12 +36,12 @@ export class ContactComponent implements OnInit {
       console.log(id,' is VALID');
       return true;
     }else{
-      console.log(id,' is NOT valid')
+      console.log(id,' is NOT valid');
       return false;
     }    
   }
 
-  isFieldValid(id: string):boolean {
+  isFieldValid(id:string):boolean {
     let field = document.getElementById(id) as HTMLInputElement | HTMLTextAreaElement;
     if (field.value.trim().length > 1) {
       console.log(id,' is VALID');

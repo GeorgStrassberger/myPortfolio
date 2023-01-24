@@ -60,6 +60,15 @@ section {
             justify-content: center;
             align-items: center;
             gap: 35px;
+            .box {
+                display: flex;
+                flex-direction: column;
+                color: red;
+                .valid {
+                    padding-top: 8px;
+                    font-size: 13px;
+                }
+            }
             input,
             textarea {
                 outline: none;

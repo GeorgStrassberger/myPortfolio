@@ -5,11 +5,15 @@
         <div class="inner">
             <h3>Want to discuss a new project?</h3>
             <p>Say hello! let's discuss your ideas and make it happen</p>
-            <form>
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your email" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
-                <input type="submit" value="Send message">
+            <form (submit)="checkAllValid()" onsubmit="return false">
+                <div class="box">
+                    <label for="">Your Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your name">
+                    <span class="valid">is Valid</span>
+                </div>
+                <input id="email" type="email" name="email" placeholder="Your email">
+                <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                <input id="submit" type="submit" name="submit" value="Send message">
             </form>
         </div>
         <div class="wrapper">
