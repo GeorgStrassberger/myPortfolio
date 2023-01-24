@@ -204,38 +204,20 @@ section {
 
 // No media query since the xxl breakpoint has no upper bound on its width
 // X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-    section {
-        .top-wrapper {
-            background-color: orchid;
-        }
-    }
-}
-
+// @media (max-width: 1399.98px) {
+//     section {}
+// }
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-    section {
-        .top-wrapper {
-            background-color: green;
-        }
-    }
-}
-
+// @media (max-width: 1199.98px) {
+//     section {}
+// }
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-    section {
-        .top-wrapper {
-            background-color: yellow;
-        }
-    }
-}
-
+// @media (max-width: 991.98px) {
+//     section {}
+// }
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     section {
-        .top-wrapper {
-            background-color: blue;
-        }
         .nav-wrapper {
             .navAnker {
                 display: none;
@@ -248,7 +230,6 @@ section {
 @media (max-width: 575.98px) {
     section {
         .top-wrapper {
-            background-color: red;
             .box {
                 position: relative;
                 display: flex;

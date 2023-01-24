@@ -1,10 +1,9 @@
 section {
     padding-block: 16px;
     padding-inline: 32px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: var(--img-width-xl) 1fr;
     .wrapper-img {
-        width: 50%;
         // aspect-ratio: 4/3;
         display: flex;
         position: relative;
@@ -25,14 +24,14 @@ section {
                 opacity: 1;
                 transform: translate(16px, 16px);
                 .circal {
-                    animation-name: rotateArrow;
+                    animation-name: rotateArrowLeft;
                     animation-duration: 0.5s;
                     animation-timing-function: linear;
                     animation-iteration-count: 1;
                     animation-fill-mode: forwards;
                 }
                 .content {
-                    animation: fadeInBox;
+                    animation: fadeInBoxLeft;
                     animation-duration: 0.5s;
                     animation-timing-function: ease-out;
                     animation-iteration-count: 1;
@@ -58,6 +57,7 @@ section {
                 }
             }
             .content {
+                width: var(--img-width-xl);
                 position: absolute;
                 top: 50px;
                 left: 0px;
@@ -114,6 +114,9 @@ section {
                 }
             }
         }
+        img {
+            width: var(--img-width-xl);
+        }
     }
     .wrapper-info {
         width: 100%;
@@ -121,7 +124,6 @@ section {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        border: 1px solid red;
         span {
             font-family: 'Syne';
             font-style: normal;

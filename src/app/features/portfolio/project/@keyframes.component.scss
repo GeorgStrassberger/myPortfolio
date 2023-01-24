@@ -1,0 +1,47 @@
+@keyframes rotateArrowLeft {
+    0% {
+        transform: translate(calc(50% + 4px), -50%) rotate(-45deg);
+    }
+    100% {
+        transform: translate(calc(50% + 4px), -50%) rotate(-270deg);
+    }
+}
+
+@keyframes rotateArrowTop {
+    0% {
+        transform: translate(50%, calc( -50% + 4px)) rotate(0deg);
+    }
+    100% {
+        transform: translate(50%, calc( -50% + 4px)) rotate(-180deg);
+    }
+}
+
+@keyframes fadeInBoxLeft {
+    0% {
+        opacity: 0;
+        transform: translate(0);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(100%);
+    }
+}
+
+@keyframes fadeInBoxTop {
+    0% {
+        opacity: 0;
+        height: 100%;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 110%;
+        transform: translateY(90%);
+    }
+}
