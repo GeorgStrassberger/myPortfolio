@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss','@media.component.scss', '@keyframes.component.scss']
+  styleUrls: ['./project.component.scss','./project.@media.scss', './project.@keyframes.scss']
 })
 export class ProjectComponent implements OnInit {
 

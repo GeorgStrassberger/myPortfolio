@@ -7,7 +7,7 @@ footer {
     flex-direction: column;
     gap: 8px;
     .links {
-        width: 200px;
+        width: clamp(60px, 50vw, 200px);
         display: flex;
         justify-content: space-between;
     }
@@ -19,7 +19,6 @@ footer {
             display: flex;
             border-radius: 6px;
             height: 40px;
-            transition: all 275ms linear ease-in;
         }
         a:hover {
             opacity: 0.8;
@@ -34,7 +33,7 @@ footer {
         font-family: 'Overpass';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: clamp(12px, 1.5vw, 16px);
         line-height: 120%;
         a {
             text-decoration: none;
@@ -43,7 +42,7 @@ footer {
         }
         a:hover {
             color: var(--color-green);
-            border-bottom: #00BC8F 2px solid;
+            border-bottom: var(--color-green) 2px solid;
         }
     }
 }
@@ -52,42 +51,6 @@ footer {
     font-family: var(--sub-font-family);
     font-style: var(--sub-font-style);
     font-weight: var(--sub-font-weight);
-    font-size: var(--sub-font-size);
     line-height: var(--sub-line-height);
-}
-
-// No media query since the xxl breakpoint has no upper bound on its width
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-    section {
-        background-color: orchid;
-    }
-}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-    section {
-        background-color: green;
-    }
-}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-    section {
-        background-color: yellow;
-    }
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-    section {
-        background-color: blue;
-    }
-}
-
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-    section {
-        background-color: red;
-    }
+    font-size: clamp(12px, 1.5vw, 16px);
 }

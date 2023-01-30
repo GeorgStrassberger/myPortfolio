@@ -5,14 +5,22 @@
         <div class="inner">
             <h3>Want to discuss a new project?</h3>
             <p>Say hello! let's discuss your ideas and make it happen</p>
-            <form (submit)="checkAllValid()" onsubmit="return false">
+            <form (submit)="checkAllValid()" onsubmit=" return false">
                 <div class="box">
-                    <label for="">Your Name</label>
+                    <label class="d-none" for="">Your Name</label>
                     <input id="name" type="text" name="name" placeholder="Your name">
-                    <span class="valid">is Valid</span>
+                    <span id="nameStatus" class="invisible">is required</span>
                 </div>
-                <input id="email" type="email" name="email" placeholder="Your email">
-                <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                <div class="box">
+                    <label class="d-none" for="email">Your email</label>
+                    <input id="email" type="text" name="email" placeholder="Your email">
+                    <span id="emailStatus" class="invisible">is required</span>
+                </div>
+                <div data-attribut="DE" class="box">
+                    <label class="d-none" for="message">Your message</label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <span id="messageStatus" class="invisible">is required</span>
+                </div>
                 <input id="submit" type="submit" name="submit" value="Send message">
             </form>
         </div>

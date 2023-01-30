@@ -19,6 +19,8 @@
     --color-green: #00BC8F;
     --color-black: #2f2f2f;
     --color-gray: #333231;
+    --color-error: #E71D40;
+    --color-done: #70E71D;
     /*img*/
     --img-width-xl: 700px;
     --img-width-l: 620px;
@@ -52,3 +54,12 @@ body {
 .disabledbutton {
     pointer-events: none;
 }
+
+.d-none {
+    display: none;
+}
+
+// H2 Contact   font-size: clamp(32px, 6vw, 78px);
+// H3 Contact   font-size: clamp(20px, 2.5vw, 32px);
+// p  Contact   font-size: clamp(16px, 2vw, 23px);
+// input        font-size: clamp(12px, 1.5vw, 16px);
