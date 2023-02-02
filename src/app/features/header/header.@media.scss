@@ -8,15 +8,36 @@
 //     section {}
 // }
 // Medium devices (tablets, less than 992px)
-// @media (max-width: 991.98px) {
-//     section {}
-// }
+@media (max-width: 991.98px) {
+    section {
+        .top-wrapper {
+            .box {
+                width: 400px;
+                height: 56px;
+                &::before {
+                    top: 60%;
+                    right: 380px;
+                    width: 400px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     section {
-        .nav-wrapper {
-            .navAnker {
-                display: none;
+        .top-wrapper {
+            .box {
+                width: 300px;
+                height: 56px;
+                &::before {
+                    top: 60%;
+                    right: 275px;
+                    width: 300px;
+                    height: 56px;
+                }
             }
         }
     }
@@ -26,38 +47,26 @@
 @media (max-width: 575.98px) {
     section {
         .top-wrapper {
+            background-color: burlywood;
+            gap: 8px;
             .box {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 300px;
-                height: 80px;
-                background: var(--color-white);
-                overflow: hidden;
-                cursor: pointer;
+                width: 250px;
+                height: 56px;
                 &::before {
-                    content: '';
-                    position: absolute;
                     top: 60%;
-                    right: 270px;
-                    width: 300px;
-                    height: 50px;
-                    background-color: var(--color-black);
+                    right: 230px;
+                    width: 250px;
+                    height: 56px;
                 }
-                &:hover::before {
-                    animation: border 0.5s linear 1;
-                    animation-fill-mode: forwards;
-                }
-                &::after {
-                    content: '';
-                    position: absolute;
-                    inset: 4px;
-                    background: var(--color-white);
-                }
-                a {
-                    font-size: 48px;
-                }
+            }
+        }
+        .nav-wrapper {
+            background-color: cadetblue;
+            .navAnker {
+                display: none;
+            }
+            img {
+                height: 24px;
             }
         }
     }
