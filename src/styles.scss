@@ -27,8 +27,10 @@
     --img-width-m: 480px;
     --img-width-s: 340px;
     // Width
+    --width-project: clamp(340px, 80%, 700px);
     --width-arrow: clamp(16px, 80%, 40px);
     --width-m: clamp(12px, 60%, 16px);
+    --width-circle: clamp(16, 100%, 40px);
 }
 
 * {
@@ -42,7 +44,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font-family);
     color: var(--color-black);
     &::-webkit-scrollbar {
         display: none;

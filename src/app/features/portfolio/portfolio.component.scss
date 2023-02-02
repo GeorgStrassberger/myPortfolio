@@ -1,28 +1,27 @@
 section {
+    padding-inline: 32px;
     background-color: var(--color-white);
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 48px;
     .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         text-align: center;
         h2 {
-            font-family: 'Syne';
-            font-style: normal;
+            font-family: var(--font-size-h2);
             font-weight: 800;
-            font-size: 78px;
-            line-height: 100%;
+            font-size: var(--font-size-h2);
             transition: all 125ms ease-in-out;
             &:hover {
                 color: var(--color-green);
             }
         }
         p {
-            font-family: 'Overpass';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 23px;
-            line-height: 120%;
+            font-family: var(--sec-font-family);
+            font-size: var(--font-size-p);
         }
     }
 }
