@@ -12,11 +12,9 @@ section {
     .headline {
         display: flex;
         flex-direction: column;
-        gap: 48px;
         text-align: center;
-        font-family: 'Syne';
-        font-size: 128px;
-        line-height: 100%;
+        font-family: var(--main-font-family);
+        font-size: var(--font-size-h1);
         .subline {
             display: flex;
             align-items: center;
@@ -38,14 +36,15 @@ section {
                 background-color: var(--color-white);
                 position: absolute;
                 color: var(--color-green);
-                font-family: "Overpass";
+                font-family: var(--sec-font-family);
                 font-weight: 700;
-                font-size: 48px;
+                font-size: var(--font-size-h3);
                 line-height: 100%;
             }
         }
     }
     .email {
+        font-size: var(--font-size-tf);
         position: absolute;
         bottom: 16px;
         left: 32px;
@@ -64,7 +63,7 @@ section {
         .arrow-wrapper {
             position: relative;
             height: 100px;
-            width: 100%;
+            width: var(--width-l);
             overflow: hidden;
             .arrow {
                 display: flex;
@@ -75,7 +74,7 @@ section {
                 right: 0;
                 animation: arrowDown 2.5s linear 0s infinite normal none;
                 img {
-                    width: 40px;
+                    width: 100%;
                     height: 60px;
                 }
             }
@@ -86,13 +85,11 @@ section {
         .text-wrapper {
             display: flex;
             flex-direction: column;
-            font-family: 'Overpass';
-            font-style: normal;
+            font-family: var(--sec-font-family);
             font-weight: 300;
-            font-size: 23px;
+            font-size: var(--font-size-p);
             line-height: 100%;
             align-items: center;
-            letter-spacing: -0.025em;
         }
     }
 }
