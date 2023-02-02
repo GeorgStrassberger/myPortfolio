@@ -1,29 +1,28 @@
 section {
     background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     text-align: center;
-    padding-top: 42px;
+    padding-top: 64px;
     padding-inline: 32px;
-    padding-bottom: 16px;
-    .headline {
+    padding-bottom: 32px;
+    h2 {
+        padding-inline: 16px;
         background-color: var(--color-white);
         position: absolute;
         z-index: 2;
-        padding-inline: 16px;
         top: 0;
         left: 50%;
-        transform: translateX(-50%);
-        h2 {
-            width: 550px;
-            font-family: 'Syne';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 78px;
-            line-height: 100%;
-            transition: all 125ms ease-in-out;
-            &:hover {
-                color: var(--color-green);
-            }
+        transform: translate(-50%, -50%);
+        font-family: var(--main-font-family);
+        font-weight: 800;
+        font-size: var(--font-size-h2);
+        transition: all 125ms ease-in-out;
+        &:hover {
+            color: var(--color-green);
         }
     }
     .wrapper {
@@ -33,10 +32,11 @@ section {
         grid-template-rows: auto;
         grid-template-areas: "html css js git api" " ts ng material firebase scrum";
         gap: 32px;
+        width: 100%;
         border: 2px solid black;
-        padding-top: 132px;
+        padding-top: 64px;
         padding-inline: 32px;
-        padding-bottom: 80px;
+        padding-bottom: 32px;
         .html {
             grid-area: html;
         }
@@ -74,11 +74,9 @@ section {
             align-items: center;
             gap: 8px;
             color: var(--color-black);
-            font-family: 'Overpass';
-            font-style: normal;
+            font-family: var(--sec-font-family);
             font-weight: 700;
-            font-size: 16px;
-            line-height: 120%;
+            font-size: var(--font-size-tf);
             transition: all 125ms ease-in-out;
             overflow: hidden;
             mix-blend-mode: luminosity;

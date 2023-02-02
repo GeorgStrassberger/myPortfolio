@@ -10,17 +10,9 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
     section {
-        .headline {
-            top: 20px;
-            left: 50%;
-            h2 {
-                width: 400px;
-                font-size: 40px;
-            }
-        }
         .wrapper {
-            padding-top: 80px;
-            padding-bottom: 80px;
+            padding-top: 64px;
+            padding-bottom: 32px;
         }
     }
 }
@@ -28,21 +20,13 @@
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     section {
-        .headline {
-            top: 20px;
-            left: 50%;
-            h2 {
-                width: 300px;
-                font-size: 40px;
-            }
-        }
         .wrapper {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas: "html css js git" "ts ng material firebase" ". api scrum .";
             gap: 24px;
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding-top: 48px;
+            padding-bottom: 24px;
         }
     }
 }
@@ -55,6 +39,8 @@
             grid-template-rows: auto;
             grid-template-areas: "html css" "js api" "git ts" "ng material" "firebase scrum";
             gap: 16px;
+            padding-top: 40px;
+            padding-bottom: 16px;
         }
     }
 }
