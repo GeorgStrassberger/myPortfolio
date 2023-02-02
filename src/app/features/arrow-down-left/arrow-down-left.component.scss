@@ -2,24 +2,24 @@ section {
     position: relative;
     background-color: var(--color-white);
     display: flex;
-    justify-content: end;
     height: 150px;
+    padding-inline: 32px;
     .wrapper {
-        position: absolute;
-        right: 200px;
-        top: 0px;
-        height: 100px;
-        width: 100px;
-        animation-name: growLeft;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
-    }
-    img {
+        position: relative;
         height: 100%;
         width: 100%;
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100px;
+            width: 100px;
+            animation-name: growLeft;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
     }
 }
