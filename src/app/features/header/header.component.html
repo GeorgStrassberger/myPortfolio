@@ -21,16 +21,14 @@
 
 
     <div class="nav-wrapper">
-        <a routerLink="/#home" (click)="navService.forceNavigate('home')">
-            <img src="../../../assets/images/icons//logo_black.png" alt="myLogo">
-        </a>
+        <img class="test" (click)="navService.forceNavigate('home')" src="../../../assets/images/icons//logo_black.png" alt="myLogo" title="HOME">
         <div class="navAnker">
-            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')">About me</a>
-            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')">My Skills</a>
-            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')">Portfolio</a>
-            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')">Contact</a>
+            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')" title="ABOUT ME">About me</a>
+            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')" title="SKILLS">My Skills</a>
+            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')" title="PROTFOLIO">Portfolio</a>
+            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')" title="CONTACT">Contact</a>
         </div>
-        <img id="menu" (click)="toggleMenuBtn()" src={{MENU_IMAGES[0]}}>
+        <img id="menu" (click)="toggleMenuBtn()" src={{MENU_IMAGES[0]}} alt="menu" title="MENU">
     </div>
 
 

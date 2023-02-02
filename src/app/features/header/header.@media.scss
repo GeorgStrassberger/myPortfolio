@@ -1,12 +1,3 @@
-// No media query since the xxl breakpoint has no upper bound on its width
-// X-Large devices (large desktops, less than 1400px)
-// @media (max-width: 1399.98px) {
-//     section {}
-// }
-// Large devices (desktops, less than 1200px)
-// @media (max-width: 1199.98px) {
-//     section {}
-// }
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
     section {
@@ -47,7 +38,6 @@
 @media (max-width: 575.98px) {
     section {
         .top-wrapper {
-            background-color: burlywood;
             gap: 8px;
             .box {
                 width: 250px;
@@ -61,13 +51,12 @@
             }
         }
         .nav-wrapper {
-            background-color: cadetblue;
             .navAnker {
                 display: none;
             }
-            img {
-                height: 24px;
-            }
+            // img {
+            //     height: 24px;
+            // }
         }
     }
 }
