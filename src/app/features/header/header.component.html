@@ -1,34 +1,34 @@
-<section id="header">
+<section #headerSection id="header">
 
     <div id="top" class="top-wrapper">
         <!-- Alles von oben -->
         <div class="box">
-            <a routerLink="/#home" (click)="navService.forceNavigate('home'); closeBtnAnimation()">Home</a>
+            <a routerLink="/#home" (click)="navService.forceNavigate('home')">Home</a>
         </div>
         <div class="box">
-            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe'); closeBtnAnimation()">About me</a>
+            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')">About me</a>
         </div>
         <div class="box">
-            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills'); closeBtnAnimation()">My Skills</a>
+            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')">My Skills</a>
         </div>
         <div class="box">
-            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio'); closeBtnAnimation()">Portfolio</a>
+            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')">Portfolio</a>
         </div>
         <div class="box">
-            <a routerLink="/#contact" (click)="navService.forceNavigate('contact'); closeBtnAnimation()">Contact</a>
+            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')">Contact</a>
         </div>
     </div>
 
 
     <div class="nav-wrapper">
-        <img class="test" (click)="navService.forceNavigate('home')" src="../../../assets/images/icons//logo_black.png" alt="myLogo" title="HOME">
+        <img (click)="navService.forceNavigate('home')" src="../../../assets/images/icons//logo_black.png" alt="myLogo" title="HOME">
         <div class="navAnker">
             <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')" title="ABOUT ME">About me</a>
             <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')" title="SKILLS">My Skills</a>
             <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')" title="PROTFOLIO">Portfolio</a>
             <a routerLink="/#contact" (click)="navService.forceNavigate('contact')" title="CONTACT">Contact</a>
         </div>
-        <img id="menu" (click)="toggleMenuBtn()" src={{MENU_IMAGES[0]}} alt="menu" title="MENU">
+        <img id="menu" (click)="toggleMenuBtn()" src={{this.navService.MENU_IMAGES[0]}} alt="menu" title="MENU">
     </div>
 
 

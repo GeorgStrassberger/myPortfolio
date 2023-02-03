@@ -107,7 +107,6 @@ section {
     .bottem-wrapper {
         position: absolute;
         bottom: 0px;
-        background-color: var(--color-black);
         color: var(--color-white);
         transform: translateY(100%);
         animation-name: botFadeDown;
@@ -117,7 +116,7 @@ section {
         animation-direction: normal;
         animation-fill-mode: forwards;
         .triangle {
-            background-color: var(--color-white);
+            background-color: transparent;
             width: 0px;
             height: 0px;
             border-style: solid;

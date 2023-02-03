@@ -9,63 +9,27 @@ import { NavigationService } from 'src/app/shared/services/navigation.service';
 })
 export class HeaderComponent implements OnInit {
 
-  isMenuOpen: boolean = false;
-  
-  MENU_IMAGES: string[] = [
-    '../../../assets/images/menu/menu1.png',
-    '../../../assets/images/menu/menu2.png',
-    '../../../assets/images/menu/menu3.png',
-    '../../../assets/images/menu/menu4.png',
-    '../../../assets/images/menu/menu5.png'
-  ];
-
   
   constructor( 
     public navService: NavigationService, 
     public router: Router
     ) { }
 
+
   ngOnInit(): void {
   }
   
 
   toggleMenuBtn(){
-    if(!this.isMenuOpen){
-      this.openBtnAnimation();
+    if(!this.navService.isMenuOpen){
+      // this.navService.openBtnAnimation();
       this.navService.openNavMenu();
-      this.isMenuOpen = true;
     }else{
-      this.closeBtnAnimation();
+      // this.navService.closeBtnAnimation();
       this.navService.closeNavMenu();
-      this.isMenuOpen = false;
     }
     this.navService.disabledClickFor(1000, 'menu'); 
   }
 
-
-  openBtnAnimation() {
-    let i = 0;
-    const menu = document.getElementById('menu')as HTMLImageElement;
-    const TIMER = setInterval(() => {
-        i++
-        menu.src = this.MENU_IMAGES[i];
-        if (i === 4) {
-            clearInterval(TIMER);
-        }
-    }, 100);
-  }
-
-
-  closeBtnAnimation() {
-    let i = 4;
-    const menu = document.getElementById('menu')as HTMLImageElement;
-    const TIMER = setInterval(() => {
-      i--;
-      menu.src = this.MENU_IMAGES[i];
-      if (i === 0) {
-          clearInterval(TIMER);
-      }
-    }, 100);
-  }
 
 }
