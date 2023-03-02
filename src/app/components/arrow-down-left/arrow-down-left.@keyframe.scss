@@ -1,0 +1,41 @@
+@keyframes growLeft {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    30% {
+        opacity: 1;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    50% {
+        opacity: 1;
+        height: 15rem;
+        width: 15rem;
+        right: 0;
+        top: 0;
+    }
+
+    80% {
+        opacity: 1;
+        height: 10rem;
+        width: 10rem;
+        right: 5rem;
+        top: 5rem;
+    }
+
+    100% {
+        height: 5rem;
+        width: 5rem;
+        opacity: 0;
+        right: 10rem;
+        top: 10rem;
+    }
+}

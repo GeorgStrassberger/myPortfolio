@@ -1,0 +1,27 @@
+section {
+    min-height: calc(100vh - var(--footer-height));
+    padding-top: var(--header-height);
+    background-color: var(--color-white);
+    padding-top: calc(var(--header-height) + 3.2rem);
+    padding-inline: 3.2rem;
+    padding-bottom: 3.2rem;
+    font-size: var(--font-size-tf);
+
+    ul {
+        list-style: square outside none;
+        padding-left: 2rem;
+    }
+
+    a {
+        color: var(--color-green);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-black);
+        }
+
+        &:visited {
+            color: var(--color-black);
+        }
+    }
+}

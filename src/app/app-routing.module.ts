@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
-import { LandingComponent } from './landing/landing.component'; //Start
-import { ImprintComponent } from './features/imprint/imprint.component';
-import { DataProtectionComponent } from './features/data-protection/data-protection.component';
+import { LandingComponent } from './landing/landing.component';
+import { ImprintComponent } from './components/imprint/imprint.component';
+import { DataProtectionComponent } from './components/data-protection/data-protection.component';
 
 
 const routes: Routes = [
-  { path: '', component: LandingComponent},
-  { path: 'imprint' , component: ImprintComponent },
-  { path: 'data-protection' , component: DataProtectionComponent }  
+  { path: '', component: LandingComponent },
+  { path: 'imprint', component: ImprintComponent },
+  { path: 'data-protection', component: DataProtectionComponent }
 ];
 
 const config = {

@@ -1,0 +1,27 @@
+section {
+    position: relative;
+    background-color: var(--color-white);
+    display: flex;
+    height: 15rem;
+    padding-inline: 3.2rem;
+
+    .wrapper {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 10rem;
+            width: 10rem;
+            animation-name: growLeft;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+// No media query since the xxl breakpoint has no upper bound on its width
+// X-Large devices (large desktops, less than 1400px
+// @media (max-width: 1399.98px) {
+//     .outer {}
+// }
+// Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) {
+//     .outer {}
+// }
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .outer {
+        gap: 4.8rem;
+
+        .inner {
+            form {
+                gap: 1.6rem;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .outer {
+        gap: 4rem;
+
+        .inner {
+            form {
+                gap: 1.6rem;
+            }
+        }
+
+        .wrapper {
+            right: 2.4rem;
+            width: 3.2rem;
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .outer {
+        gap: 3.2rem;
+
+        .inner {
+            form {
+                gap: 1.6rem;
+            }
+        }
+
+        .wrapper {
+            right: 0.4rem;
+            width: 2.4rem;
+        }
+    }
+}
