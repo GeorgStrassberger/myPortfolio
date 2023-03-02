@@ -16,6 +16,7 @@ import { ProjectComponent } from './features/portfolio/project/project.component
 import { ImprintComponent } from './features/imprint/imprint.component';
 import { DataProtectionComponent } from './features/data-protection/data-protection.component';
 import { LandingComponent } from './landing/landing.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { LandingComponent } from './landing/landing.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

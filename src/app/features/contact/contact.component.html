@@ -5,27 +5,35 @@
         <div class="inner">
             <h3>Want to discuss a new project?</h3>
             <p>Say hello! let's discuss your ideas and make it happen</p>
-            <form (submit)="checkAllValid()" onsubmit="return false">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="box">
                     <label class="d-none" for="">Your Name</label>
-                    <input id="name" type="text" name="name" placeholder="Your name">
-                    <span id="nameStatus" class="invisible">is required</span>
+                    <input id="name" type="text" name="name" formControlName="name" placeholder="Your name">
+                    <span
+                        [ngClass]="{'inValidFont': !contactForm.controls['name'].valid && contactForm.controls['name'].touched}">is
+                        required</span>
                 </div>
                 <div class="box">
                     <label class="d-none" for="email">Your email</label>
-                    <input id="email" type="text" name="email" placeholder="Your email">
-                    <span id="emailStatus" class="invisible">is required</span>
+                    <input id="email" type="text" name="email" formControlName="email" placeholder="Your email">
+                    <span
+                        [ngClass]="{'inValidFont': !contactForm.controls['email'].valid && contactForm.controls['email'].touched}">is
+                        required</span>
                 </div>
                 <div class="box">
                     <label class="d-none" for="message">Your message</label>
-                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message"></textarea>
-                    <span id="messageStatus" class="invisible">is required</span>
+                    <textarea id="message" name="message" formControlName="message" cols="30" rows="10"
+                        placeholder="Your message"></textarea>
+                    <span
+                        [ngClass]="{'inValidFont': !contactForm.controls['message'].valid && contactForm.controls['message'].touched}">is
+                        required</span>
                 </div>
-                <input id="submit" type="submit" name="submit" value="Send message">
+                <button id="submit" type="submit" [ngClass]="{'not-allowed': !contactForm.valid}"
+                    [disabled]="!contactForm.valid">Send message</button>
             </form>
         </div>
         <div class="wrapper">
-            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')" class="arrow">
+            <a routerLink="/#home" (click)="navService.forceNavigate('home')" class="arrow">
                 <img src="../../../assets/images/arrows/arrow7.png" alt="arrow_up">
             </a>
         </div>

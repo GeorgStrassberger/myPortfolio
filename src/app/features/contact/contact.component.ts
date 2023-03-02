@@ -1,73 +1,49 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss','./contact.@keyframe.scss','./contact.@media.scss']
+  styleUrls: ['./contact.component.scss', './contact.@keyframe.scss', './contact.@media.scss']
 })
 
-export class ContactComponent implements OnInit {
+export class ContactComponent implements OnInit, DoCheck {
+
+  isValid: boolean = false;
+  contactEmail: boolean = false;
+  contactForm!: FormGroup;
 
   constructor(
     public navService: NavigationService
   ) { }
 
-  ngOnInit(): void { 
+  ngDoCheck() {
+    this.isValid = this.contactForm.valid;
+    console.log('isValid', this.isValid);
+    this.contactEmail = this.contactForm.controls['email'].valid
+    this.contactForm.controls['name'].touched
+    console.log('contactEmail', this.contactEmail);
   }
 
-  checkAllValid(){
-    this.isFieldValid('name');
-    this.isEmailValid('email');
-    this.isFieldValid('message');
+  ngOnInit(): void {
+    this.initForm();
   }
 
-  isEmailValid(id:string):boolean{
-    let emalStatus = document.getElementById('emailStatus') as HTMLSpanElement;
-    let emailPattern: RegExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    let field = document.getElementById(id) as HTMLInputElement;
-    if(field.value.trim().length > 1 && field.value.match(emailPattern)){
-      console.log(id,' is VALID');
-      field.classList.add('valid');
-      return true;
-    }else{
-      if (id === 'email') {
-        emalStatus.innerHTML = `Your email is required`;
-        emalStatus.classList.remove('invisible');
-        emalStatus.classList.add('failed');
-        emalStatus.classList.add('inValidFont');
-      }
-      field.classList.add('inValidBorder');
-      return false;
-    }    
+  initForm(): void {
+    this.contactForm = new FormGroup({
+      'name': new FormControl('', Validators.required),
+      'email': new FormControl('', [Validators.required, Validators.pattern(/^[^ ]+@[^ ]+\.[a-z]{2,3}$/)]),
+      'message': new FormControl('', Validators.required),
+    });
   }
 
-  isFieldValid(id:string):boolean {
-    let nameStatus = document.getElementById('nameStatus') as HTMLSpanElement;
-    let messageStatus = document.getElementById('messageStatus') as HTMLSpanElement;
-    let minCharacter: number = 3;
-    let field = document.getElementById(id) as HTMLInputElement | HTMLTextAreaElement;
-    if (field.value.trim().length >= minCharacter) {
-      field.classList.add('valid');
-      return true;
-    }else{
-      if(id === 'name'){
-        nameStatus.innerHTML = `Your name is required, at least ${minCharacter} letters`;
-        nameStatus.classList.remove('invisible');
-        nameStatus.classList.add('failed');
-        nameStatus.classList.add('inValidFont');
-      }
-      if (id === 'message') {
-        messageStatus.innerHTML = `Your message must contain at least ${minCharacter} characters`;
-        messageStatus.classList.remove('invisible');
-        messageStatus.classList.add('failed');
-        messageStatus.classList.add('inValidFont');
-      }
-      field.classList.add('inValidBorder');
-      return false;
-    }
-  }  
+  onSubmit(): void {
+    console.log('contactForm: ', this.contactForm);
+    this.initForm();
+  }
+
 
 }
 
