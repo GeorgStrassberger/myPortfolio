@@ -27,19 +27,33 @@ export class ContactComponent implements OnInit, DoCheck {
     this.initForm();
   }
 
+  onSubmit(): void {
+    this.initForm();
+    // this.createFormData();
+    console.log('contactForm:', this.contactForm)
+    // play Sound & show PopUp 
+  }
+
   initForm(): void {
     this.contactForm = new FormGroup({
       'name': new FormControl('', Validators.required),
       'email': new FormControl('', [Validators.required, Validators.pattern(/^[^ ]+@[^ ]+\.[a-z]{2,3}$/)]),
       'message': new FormControl('', Validators.required),
     });
+    // console.log('contactForm:', this.contactForm)
   }
 
-  onSubmit(): void {
-    console.log('contactForm: ', this.contactForm);
-    this.initForm();
-  }
+  createFormData() {
+    const fd = new FormData();
+    fd.append('name', this.contactForm.controls['name'].value);
+    fd.append('email', this.contactForm.controls['email'].value);
+    fd.append('message', this.contactForm.controls['message'].value);
+    console.log('FormData: ', fd);
+    // await fetch("https://georg-strassberger.de/send_mail/send_mail.php", { method: 'POST', body: fd });
 
+  }
 
 }
+
+
 

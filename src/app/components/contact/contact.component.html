@@ -5,31 +5,33 @@
         <div class="inner">
             <h3>Want to discuss a new project?</h3>
             <p>Say hello! let's discuss your ideas and make it happen</p>
+            <!-- FORM START-->
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="box">
                     <label class="d-none" for="">Your Name</label>
                     <input id="name" type="text" name="name" formControlName="name" placeholder="Your name">
                     <span
-                        [ngClass]="{'inValidFont': !contactForm.controls['name'].valid && contactForm.controls['name'].touched}">is
-                        required</span>
+                        [ngClass]="{'inValidFont': !contactForm.controls['name'].valid && contactForm.controls['name'].touched}">Your
+                        name is required</span>
                 </div>
                 <div class="box">
                     <label class="d-none" for="email">Your email</label>
                     <input id="email" type="text" name="email" formControlName="email" placeholder="Your email">
                     <span
-                        [ngClass]="{'inValidFont': !contactForm.controls['email'].valid && contactForm.controls['email'].touched}">is
-                        required</span>
+                        [ngClass]="{'inValidFont': !contactForm.controls['email'].valid && contactForm.controls['email'].touched}">Your
+                        Email is required</span>
                 </div>
                 <div class="box">
                     <label class="d-none" for="message">Your message</label>
                     <textarea id="message" name="message" formControlName="message" cols="30" rows="10"
                         placeholder="Your message"></textarea>
                     <span
-                        [ngClass]="{'inValidFont': !contactForm.controls['message'].valid && contactForm.controls['message'].touched}">is
-                        required</span>
+                        [ngClass]="{'inValidFont': !contactForm.controls['message'].valid && contactForm.controls['message'].touched}">Your
+                        message is empty</span>
                 </div>
                 <button id="submit" type="submit" [disabled]="!contactForm.valid">Send message</button>
             </form>
+            <!-- FORM END-->
         </div>
         <div class="wrapper">
             <a routerLink="/#home" (click)="navService.forceNavigate('home')" class="arrow">
