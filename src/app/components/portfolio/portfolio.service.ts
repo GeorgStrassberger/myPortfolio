@@ -66,7 +66,4 @@ export class PortfolioService {
     getProject(index: number): Project {
         return this.projects.slice()[index];
     }
-
-
-
 }

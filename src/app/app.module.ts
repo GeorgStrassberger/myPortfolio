@@ -17,6 +17,8 @@ import { ImprintComponent } from './components/imprint/imprint.component';
 import { DataProtectionComponent } from './components/data-protection/data-protection.component';
 import { LandingComponent } from './landing/landing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FillupPipe } from './shared/pipes/fillup.pipe';
+import { ShortenPipe } from './shared/pipes/shorten.pipe';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProjectComponent,
     ImprintComponent,
     DataProtectionComponent,
-    LandingComponent
+    LandingComponent,
+    FillupPipe,
+    ShortenPipe,
   ],
   imports: [
     BrowserModule,

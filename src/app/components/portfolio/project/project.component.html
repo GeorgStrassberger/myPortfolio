@@ -25,6 +25,6 @@
         <img src="{{ project.imagePath }}" alt="pokedex" />
     </div>
     <div class="wrapper-info">
-        <span>{{ index }}/{{ projects.length }}</span>
+        <span>{{ index| fillup:2 }}/{{ projects.length | fillup:2 }}</span>
     </div>
 </section>
