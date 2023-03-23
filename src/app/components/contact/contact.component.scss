@@ -14,7 +14,7 @@ section {
         gap: 56px;
         position: relative;
         background-color: var(--color-black);
-        padding-inline: 3.2rem;
+        padding-inline: var(--pad-in-l);
         padding-bottom: 1.6rem;
 
         h2 {
@@ -57,10 +57,12 @@ section {
                 justify-content: center;
                 align-items: center;
                 gap: 2.4rem;
+                width: 580px;
 
                 .box {
                     display: flex;
                     flex-direction: column;
+                    width: 100%;
 
                     label {
                         color: var(--color-white);
@@ -82,9 +84,8 @@ section {
                     textarea {
                         outline: none;
                         border: none;
-                        width: clamp(20rem, 80vw, 62rem);
                         font-family: var(--sec-font-family);
-                        font-size: var(--font-size-tf);
+                        font-size: var(--font-size-p);
                         line-height: 120%;
                         color: var(--color-white);
                         background-color: var(--color-black);

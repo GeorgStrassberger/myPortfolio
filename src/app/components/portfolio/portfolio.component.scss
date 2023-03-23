@@ -1,24 +1,28 @@
 section {
-    padding-inline: 32px;
+    padding-inline: var(--pad-in-l);
     background-color: var(--color-white);
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 4.8rem;
+
     .wrapper {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 1.6rem;
         text-align: center;
+
         h2 {
             font-family: var(--font-size-h2);
             font-weight: 800;
             font-size: var(--font-size-h2);
             transition: all 125ms ease-in-out;
+
             &:hover {
                 color: var(--color-green);
             }
         }
+
         p {
             font-family: var(--sec-font-family);
             font-size: var(--font-size-p);

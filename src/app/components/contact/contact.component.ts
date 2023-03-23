@@ -27,10 +27,13 @@ export class ContactComponent implements OnInit, DoCheck {
     this.initForm();
   }
 
-  onSubmit(): void {
-    this.initForm();
-    // this.createFormData();
-    console.log('contactForm:', this.contactForm)
+  async onSubmit(): Promise<void> {
+    await this.createFormData()
+      .then(() => {
+        this.contactForm.reset();
+      }).catch(() => {
+        // Error Handling
+      });
     // play Sound & show PopUp 
   }
 
@@ -40,17 +43,23 @@ export class ContactComponent implements OnInit, DoCheck {
       'email': new FormControl('', [Validators.required, Validators.pattern(/^[^ ]+@[^ ]+\.[a-z]{2,3}$/)]),
       'message': new FormControl('', Validators.required),
     });
-    // console.log('contactForm:', this.contactForm)
   }
 
-  createFormData() {
+  async createFormData(): Promise<void> {
     const fd = new FormData();
     fd.append('name', this.contactForm.controls['name'].value);
     fd.append('email', this.contactForm.controls['email'].value);
     fd.append('message', this.contactForm.controls['message'].value);
     console.log('FormData: ', fd);
-    // await fetch("https://georg-strassberger.de/send_mail/send_mail.php", { method: 'POST', body: fd });
-
+    const response = await fetch("https://georg-strassberger.de/send_mail/send_mail.php", { method: 'POST', body: fd });
+    if (!response.ok) {
+      return Promise.reject('My Error message');
+    }
+    const isSend = await response.json();
+    if (isSend === false) {
+      return Promise.reject('My Error message');
+    }
+    return Promise.resolve();
   }
 
 }

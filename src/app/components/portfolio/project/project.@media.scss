@@ -2,19 +2,23 @@
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
     section {
+
         // background-color: aqua;
         .wrapper-img {
             .frame {
                 .circal {
-                    height: 40px;
-                    width: 40px;
+                    height: 4rem;
+                    width: 4rem;
                 }
+
                 .content {
-                    padding-left: 30px;
+                    padding-left: 3rem;
+
                     .links {
-                        gap: 16px;
+                        gap: 1.6rem;
+
                         a {
-                            padding: 16px 40px;
+                            padding: 1.6rem 4rem;
                         }
                     }
                 }
@@ -26,19 +30,23 @@
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
     section {
+
         // background-color: rgb(0, 255, 21);
         .wrapper-img {
             .frame {
                 .circal {
-                    height: 40px;
-                    width: 40px;
+                    height: 4rem;
+                    width: 4rem;
                 }
+
                 .content {
-                    padding-left: 30px;
+                    padding-left: 3rem;
+
                     .links {
-                        gap: 8px;
+                        gap: 0.8rem;
+
                         a {
-                            padding: 8px 24px;
+                            padding: 0.8rem 2.4rem;
                         }
                     }
                 }
@@ -59,20 +67,24 @@
         // background-color: coral;
         display: grid;
         grid-template-columns: 1fr;
+
         .wrapper-img {
             .frame {
                 width: 100%;
+
                 .circal {
-                    padding: 4px;
+                    padding: 0.4rem;
                     position: absolute;
                     z-index: 3;
                     top: 100%;
                     right: 50%;
-                    transform: translate(50%, calc( -50% + 4px)) rotate(0deg);
+                    transform: translate(50%, calc(-50% + 4px)) rotate(0deg);
                 }
+
                 &:hover {
                     opacity: 1;
-                    transform: translate(16px, 16px);
+                    transform: translate(1.6rem, 1.6rem);
+
                     .circal {
                         animation-name: rotateArrowTop;
                         animation-duration: 0.5s;
@@ -80,6 +92,7 @@
                         animation-iteration-count: 1;
                         animation-fill-mode: forwards;
                     }
+
                     .content {
                         animation: fadeInBoxTop;
                         animation-duration: 0.5s;
@@ -88,6 +101,7 @@
                         animation-fill-mode: forwards;
                     }
                 }
+
                 .content {
                     position: absolute;
                     padding-top: 50px;
@@ -96,18 +110,21 @@
                     top: 0;
                     left: 0;
                     padding-inline: 0;
+
                     .links {
-                        gap: 16px;
+                        gap: 1.6rem;
                     }
                 }
             }
+
             img {
                 width: 100%;
             }
         }
+
         .wrapper-info {
-            padding-top: 16px;
-            height: 300px;
+            padding-top: 1.6rem;
+            height: 30rem;
         }
     }
 }

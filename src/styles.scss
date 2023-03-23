@@ -10,7 +10,6 @@
     --font-size-h2: clamp(3.2rem, 6vw, 7.8rem);
     --font-size-h3: clamp(2rem, 2.5vw, 3.2rem);
     --font-size-p: clamp(1.6rem, 2vw, 2.4rem);
-    --font-size-tf: clamp(1.2rem, 1.5vw, 1.6rem);
     // Colors
     --color-white: #FFFCF3;
     --color-green: #00BC8F;
@@ -23,6 +22,10 @@
     --width-arrow: clamp(1.6rem, 80%, 4rem);
     --width-m: clamp(1.2rem, 60%, 1.6rem);
     --width-circle: clamp(1.6rem, 100%, 4rem);
+    //padding-inline
+    --pad-in-l: 15vw;
+    --pad-in-m: 10vw;
+    --pad-in-s: 5vw;
 }
 
 * {
@@ -32,8 +35,10 @@
 }
 
 html {
+    // font-size: 100% 16px => 1rem = 16px
     font-size: 62.5%; // Sorgt dafür 1 REM sind 10px sind
     scroll-behavior: smooth;
+
 }
 
 body {

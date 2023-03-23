@@ -87,7 +87,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-inline: 3.2rem;
+        padding-inline: var(--pad-in-l);
         height: var(--header-height);
         width: 100%;
 

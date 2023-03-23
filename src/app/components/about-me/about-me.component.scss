@@ -4,7 +4,7 @@ section {
     grid-template-columns: 1fr 30rem;
     gap: 6.4rem;
     padding-block: 6.4rem;
-    padding-inline: 3.2rem;
+    padding-inline: var(--pad-in-l);
 
     .wrapper-text {
         display: flex;

@@ -11,8 +11,8 @@
 @media (max-width: 991.98px) {
     section {
         .wrapper {
-            padding-top: 64px;
-            padding-bottom: 32px;
+            padding-top: 6.4rem;
+            padding-bottom: 3.2rem;
         }
     }
 }
@@ -24,9 +24,9 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas: "html css js git" "ts ng material firebase" ". api scrum .";
-            gap: 24px;
-            padding-top: 48px;
-            padding-bottom: 24px;
+            gap: 2.4rem;
+            padding-top: 4.8rem;
+            padding-bottom: 2.4rem;
         }
     }
 }
@@ -38,9 +38,9 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas: "html css" "js api" "git ts" "ng material" "firebase scrum";
-            gap: 16px;
-            padding-top: 40px;
-            padding-bottom: 16px;
+            gap: 1.6rem;
+            padding-top: 4rem;
+            padding-bottom: 1.6rem;
         }
     }
 }

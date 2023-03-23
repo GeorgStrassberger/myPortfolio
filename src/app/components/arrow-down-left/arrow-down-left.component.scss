@@ -3,7 +3,7 @@ section {
     background-color: var(--color-white);
     display: flex;
     height: 15rem;
-    padding-inline: 3.2rem;
+    padding-inline: var(--pad-in-l);
 
     .wrapper {
         position: relative;
