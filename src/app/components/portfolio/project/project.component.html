@@ -2,26 +2,29 @@
     <div class="wrapper-img">
         <div class="frame">
             <div class="circal">
-                <img src="../../../../assets/images/arrows/arrow7.png" alt="arrow">
+                <img src="../../../../assets/images/arrows/arrow7.png" alt="arrow" />
             </div>
             <div class="content">
-                <h3>Pokédex</h3>
+                <h3>{{ project.title }}</h3>
                 <div class="tech">
-                    JavaScript | HTML | CSS | Rest-Api
+                    <ng-container *ngFor="let language of project.languages; let i = index">
+                        <span>{{ language }}</span>
+                        <span *ngIf="i !== project.languages.length -1 "> | </span>
+                    </ng-container>
                 </div>
                 <div class="discription">
-                    Based on the PokéAPI a simple library that provides and catalogues pokemon information.
+                    {{ project.description }}
                 </div>
                 <div class="links">
-                    <a href="https://github.com/GeorgStrassberger/Pokedex" target="_blank"
-                        title="open repositorie">Github</a>
-                    <a href="http://pokedex.georg-strassberger.de/" target="_blank" title="open pokedex">Open</a>
+                    <a href="{{ project.github }}" target="_blank" title="open repositorie">Github</a>
+                    <a href="{{ project.url }}" target="_blank" title="open pokedex">Open</a>
                 </div>
             </div>
         </div>
-        <img src="../../../../assets/images/projects/pokedex.png" alt="pokedex">
+        <!-- <img src="../../../../assets/images/projects/pokedex.png" alt="pokedex"> -->
+        <img src="{{ project.imagePath }}" alt="pokedex" />
     </div>
     <div class="wrapper-info">
-        <span>01/05</span>
+        <span>{{ index }}/{{ projects.length }}</span>
     </div>
 </section>

@@ -1,13 +1,13 @@
 <section id="portfolio">
     <div class="wrapper">
         <h2>Portfolio</h2>
-        <p>Feel free to try out my latest developn´ment projects and look into their code.</p>
+        <p>
+            Feel free to try out my latest developn´ment projects and look into their
+            code.
+        </p>
     </div>
 
     <!-- component -->
-    <app-project></app-project>
-    <app-project></app-project>
-    <app-project></app-project>
+    <app-project *ngFor="let project of projects; let i = index" [project]="project" [index]="i+1"></app-project>
     <!-- component -->
-
 </section>

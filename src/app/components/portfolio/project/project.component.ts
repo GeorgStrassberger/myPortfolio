@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PortfolioService } from '../portfolio.service';
 import { Project } from './project.model';
 
 @Component({
@@ -8,21 +9,15 @@ import { Project } from './project.model';
 })
 export class ProjectComponent implements OnInit {
 
-  myProjects: Project[] = [
-    {
-      title: 'Pokedex',
-      languages: ['HTML', 'CSS', 'JS', 'Rest-Api'],
-      description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      imagePath: '',
-      github: 'https://github.com/GeorgStrassberger',
-      url: 'https://www.georg-strassberger.de/'
-    }
-  ];
+  projects!: Project[];
+  @Input() project!: Project;
+  @Input() index!: number;
 
 
-  constructor() { }
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.projects = this.portfolioService.getProjects();
   }
 
 }
