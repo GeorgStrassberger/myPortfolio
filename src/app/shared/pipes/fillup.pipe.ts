@@ -1,14 +1,12 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'fillup'
+  name: 'fillup',
 })
 export class FillupPipe implements PipeTransform {
-
-  transform(num: any, size: number) {
-    let strNum: string = num.toString();
-    while (strNum.length < size) strNum = "0" + strNum;
-    return strNum;
+  transform(value: any, size: number = 1): string {
+    let valueAsString: string = value.toString();
+    while (valueAsString.length < size) valueAsString = '0' + valueAsString;
+    return valueAsString;
   }
-
 }

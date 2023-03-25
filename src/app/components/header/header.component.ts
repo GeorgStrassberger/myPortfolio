@@ -9,6 +9,7 @@ import { NavigationService } from 'src/app/shared/services/navigation.service';
 })
 export class HeaderComponent implements OnInit {
 
+  color = document.getElementById('color')! as HTMLInputElement;
 
   constructor(
     public navService: NavigationService,
@@ -17,6 +18,18 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit(): void {
+    // this.getColor();
+    this.resetColor();
+  }
+
+  resetColor() {
+    document.documentElement.style.setProperty("--color-green", "#00BC8F");
+  }
+
+  getColor() {
+    const color = document.getElementById('color')! as HTMLInputElement;
+    console.log('color: ', color.value);
+    document.documentElement.style.setProperty("--color-green", color.value);
   }
 
 
