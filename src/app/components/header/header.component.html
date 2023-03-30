@@ -1,44 +1,95 @@
 <section id="header">
-
-    <div id="top" class="top-wrapper">
-        <!-- Alles von oben -->
-        <div class="box">
-            <a routerLink="/#home" (click)="navService.forceNavigate('home')">Home</a>
-        </div>
-        <div class="box">
-            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')">About me</a>
-        </div>
-        <div class="box">
-            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')">My Skills</a>
-        </div>
-        <div class="box">
-            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')">Portfolio</a>
-        </div>
-        <div class="box">
-            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')">Contact</a>
-        </div>
+  <div id="top" class="top-wrapper">
+    <!-- Alles von oben -->
+    <div class="box">
+      <a routerLink="/#home" (click)="navService.forceNavigate('home')">Home</a>
     </div>
-
-
-    <div class="nav-wrapper">
-        <img (click)="navService.forceNavigate('home')" src="../../../assets/images/icons//logo_black.png" alt="myLogo"
-            title="HOME">
-        <div class="navAnker">
-            <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')" title="ABOUT ME">About me</a>
-            <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')" title="SKILLS">My Skills</a>
-            <a routerLink="/#portfolio" (click)="navService.forceNavigate('portfolio')" title="PROTFOLIO">Portfolio</a>
-            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')" title="CONTACT">Contact</a>
-        </div>
-        <input type="color" name="color" id="color" value="#00BC8F" (change)="getColor()" title="ColorPicker">
-        <img id="menu" (click)="toggleMenuBtn()" src={{this.navService.MENU_IMAGES[0]}} alt="menu" title="MENU">
+    <div class="box">
+      <a routerLink="/#aboutMe" (click)="navService.forceNavigate('aboutMe')"
+        >About me</a
+      >
     </div>
-
-
-    <div id="bot" class="bottem-wrapper">
-        <!-- Alles von unten -->
-        <div class="triangle"></div>
-        <app-footer></app-footer>
+    <div class="box">
+      <a routerLink="/#mySkills" (click)="navService.forceNavigate('mySkills')"
+        >My Skills</a
+      >
     </div>
+    <div class="box">
+      <a
+        routerLink="/#portfolio"
+        (click)="navService.forceNavigate('portfolio')"
+        >Portfolio</a
+      >
+    </div>
+    <div class="box">
+      <a routerLink="/#contact" (click)="navService.forceNavigate('contact')"
+        >Contact</a
+      >
+    </div>
+  </div>
 
+  <div class="nav-wrapper">
+    <!-- LOGO -->
+    <img
+      (click)="navService.forceNavigate('home')"
+      src="../../../assets/images/icons//logo_black.png"
+      alt="myLogo"
+      title="HOME"
+    />
+    <!-- LINKS -->
+    <div class="navAnker">
+      <a
+        routerLink="/#aboutMe"
+        (click)="navService.forceNavigate('aboutMe')"
+        title="ABOUT ME"
+        >About me</a
+      >
+      <a
+        routerLink="/#mySkills"
+        (click)="navService.forceNavigate('mySkills')"
+        title="SKILLS"
+        >My Skills</a
+      >
+      <a
+        routerLink="/#portfolio"
+        (click)="navService.forceNavigate('portfolio')"
+        title="PROTFOLIO"
+        >Portfolio</a
+      >
+      <a
+        routerLink="/#contact"
+        (click)="navService.forceNavigate('contact')"
+        title="CONTACT"
+        >Contact</a
+      >
+    </div>
+    <!-- COLORPICKER -->
+    <input
+      type="color"
+      name="color"
+      id="color"
+      value="#00BC8F"
+      (change)="getColor()"
+      title="ColorPicker"
+    />
+    <!-- TRANSLATE -->
+    <div class="nav__tanslate">
+      <a class="nav__tanslate__btn">EN</a>|
+      <a class="nav__tanslate__btn">DE</a>
+    </div>
+    <!-- BURGERMENU -->
+    <img
+      id="menu"
+      (click)="toggleMenuBtn()"
+      src="{{ this.navService.MENU_IMAGES[0] }}"
+      alt="menu"
+      title="MENU"
+    />
+  </div>
 
+  <div id="bot" class="bottem-wrapper">
+    <!-- Alles von unten -->
+    <div class="triangle"></div>
+    <app-footer></app-footer>
+  </div>
 </section>
