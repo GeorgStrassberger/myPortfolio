@@ -39,24 +39,28 @@
     <!-- LINKS -->
     <div class="navAnker">
       <a
+        translate
         routerLink="/#aboutMe"
         (click)="navService.forceNavigate('aboutMe')"
         title="ABOUT ME"
         >About me</a
       >
       <a
+        translate
         routerLink="/#mySkills"
         (click)="navService.forceNavigate('mySkills')"
         title="SKILLS"
         >My Skills</a
       >
       <a
+        translate
         routerLink="/#portfolio"
         (click)="navService.forceNavigate('portfolio')"
-        title="PROTFOLIO"
+        title="PORTFOLIO"
         >Portfolio</a
       >
       <a
+        translate
         routerLink="/#contact"
         (click)="navService.forceNavigate('contact')"
         title="CONTACT"
@@ -74,8 +78,8 @@
     />
     <!-- TRANSLATE -->
     <div class="nav__tanslate">
-      <a class="nav__tanslate__btn">EN</a>|
-      <a class="nav__tanslate__btn">DE</a>
+      <a (click)="translate.use('en')" class="nav__tanslate__btn">EN</a>|
+      <a (click)="translate.use('de')" class="nav__tanslate__btn">DE</a>
     </div>
     <!-- BURGERMENU -->
     <img

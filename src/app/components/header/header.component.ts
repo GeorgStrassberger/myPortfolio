@@ -1,21 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss', './header.@keyframe.scss', './header.@media.scss']
+  styleUrls: [
+    './header.component.scss',
+    './header.@keyframe.scss',
+    './header.@media.scss',
+  ],
 })
 export class HeaderComponent implements OnInit {
-
   color = document.getElementById('color')! as HTMLInputElement;
 
   constructor(
     public navService: NavigationService,
-    public router: Router
-  ) { }
-
+    public router: Router,
+    public translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
     // this.getColor();
@@ -23,15 +27,14 @@ export class HeaderComponent implements OnInit {
   }
 
   resetColor() {
-    document.documentElement.style.setProperty("--color-green", "#00BC8F");
+    document.documentElement.style.setProperty('--color-green', '#00BC8F');
   }
 
   getColor() {
     const color = document.getElementById('color')! as HTMLInputElement;
     console.log('color: ', color.value);
-    document.documentElement.style.setProperty("--color-green", color.value);
+    document.documentElement.style.setProperty('--color-green', color.value);
   }
-
 
   toggleMenuBtn(): void {
     if (!this.navService.isMenuOpen) {
@@ -43,6 +46,4 @@ export class HeaderComponent implements OnInit {
     }
     this.navService.disabledClickFor(1000, 'menu');
   }
-
-
 }
