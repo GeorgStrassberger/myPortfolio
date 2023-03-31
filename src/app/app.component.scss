@@ -1,6 +1,15 @@
 app-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.btnStyle {
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+  &:hover {
+    color: green;
+  }
 }

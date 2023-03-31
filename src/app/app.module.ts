@@ -19,6 +19,15 @@ import { LandingComponent } from './landing/landing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FillupPipe } from './shared/pipes/fillup.pipe';
 import { ShortenPipe } from './shared/pipes/shorten.pipe';
+// Tanslate
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -44,8 +53,17 @@ import { ShortenPipe } from './shared/pipes/shorten.pipe';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'de',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
