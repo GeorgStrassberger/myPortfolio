@@ -10,9 +10,10 @@
   --font-size-h2: clamp(3.2rem, 6vw, 7.8rem);
   --font-size-h3: clamp(2rem, 2vw, 3rem);
   --font-size-p: clamp(1.8rem, 2vw, 2.2rem);
+  --font-size-small: clamp(1rem, 1vw, 2rem);
   // Colors
   --color-white: #fffcf3;
-  --color-green: #00bc8f;
+  --color-green: #00bc8f; // rename to color-main
   // --color-green: #bc00b3;
   --color-black: #2f2f2f;
   --color-gray: #333231;

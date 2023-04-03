@@ -7,9 +7,9 @@ app-header {
 
 .btnStyle {
   font-size: 32px;
-  color: red;
+  color: var(--color-error);
   cursor: pointer;
   &:hover {
-    color: green;
+    color: (var(--color-done));
   }
 }
