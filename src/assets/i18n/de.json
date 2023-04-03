@@ -1,7 +1,10 @@
 {
-  "Home": "Hause",
+  "Home": "Start",
   "About me": "Über mich",
   "My Skills": "Fähigkeiten",
   "Portfolio": "Portfolio",
-  "Contact": "Kontakt"
+  "Contact": "Kontakt",
+  "Frontend Developer": "Web Entwickler",
+  "Scroll": "Scroll",
+  "Down": "Runter"
 }

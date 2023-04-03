@@ -46,6 +46,7 @@
   <div class="nav-wrapper">
     <!-- LOGO -->
     <img
+      class="nav__logo"
       (click)="navService.forceNavigate('home')"
       src="../../../assets/images/icons//logo_black.png"
       alt="myLogo"
@@ -82,28 +83,32 @@
         >Contact</a
       >
     </div>
-    <!-- COLORPICKER -->
-    <input
-      type="color"
-      name="color"
-      id="color"
-      value="#00BC8F"
-      (change)="getColor()"
-      title="ColorPicker"
-    />
-    <!-- TRANSLATE -->
-    <div class="nav__tanslate">
-      <a (click)="translate.use('en')" class="nav__tanslate__btn">EN</a>|
-      <a (click)="translate.use('de')" class="nav__tanslate__btn">DE</a>
+    <div class="menu">
+      <!-- COLORPICKER -->
+      <input
+        class="menu__color"
+        type="color"
+        name="color"
+        id="color"
+        value="#00BC8F"
+        (change)="getColor()"
+        title="ColorPicker"
+      />
+      <!-- TRANSLATE -->
+      <div class="menu__tanslate">
+        <a (click)="translate.use('en')" class="menu__tanslate__btn">EN</a>|
+        <a (click)="translate.use('de')" class="menu__tanslate__btn">DE</a>
+      </div>
+      <!-- BURGERMENU -->
+      <img
+        class="menu__btn"
+        id="menu_btn"
+        (click)="toggleMenuBtn()"
+        src="{{ this.navService.MENU_IMAGES[0] }}"
+        alt="menu"
+        title="MENU"
+      />
     </div>
-    <!-- BURGERMENU -->
-    <img
-      id="menu"
-      (click)="toggleMenuBtn()"
-      src="{{ this.navService.MENU_IMAGES[0] }}"
-      alt="menu"
-      title="MENU"
-    />
   </div>
 
   <div id="bot" class="bottem-wrapper">

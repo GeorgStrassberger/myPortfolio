@@ -1,65 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    // Fonts
-    --header-height: 6rem;
-    --footer-height: 10rem;
-    --main-font-family: 'Syne';
-    --sec-font-family: 'Overpass';
-    --font-size-h1: clamp(2.4rem, 7vw, 13rem);
-    --font-size-h2: clamp(3.2rem, 6vw, 7.8rem);
-    --font-size-h3: clamp(2rem, 2.5vw, 3.2rem);
-    --font-size-p: clamp(1.6rem, 2vw, 2.4rem);
-    // Colors
-    --color-white: #FFFCF3;
-    --color-green: #00BC8F;
-    // --color-green: #bc00b3;
-    --color-black: #2f2f2f;
-    --color-gray: #333231;
-    --color-error: #E71D40;
-    --color-done: #70E71D;
-    // Width
-    --width-project: clamp(3.4rem, 80%, 70rem);
-    --width-arrow: clamp(1.6rem, 80%, 4rem);
-    --width-m: clamp(1.2rem, 60%, 1.6rem);
-    --width-circle: clamp(1.6rem, 100%, 4rem);
-    //padding-inline
-    --pad-in-l: 15vw;
-    --pad-in-m: 10vw;
-    --pad-in-s: 5vw;
+  // Fonts
+  --header-height: 6rem;
+  --footer-height: 10rem;
+  --main-font-family: "Syne";
+  --sec-font-family: "Overpass";
+  --font-size-h1: clamp(2.4rem, 7vw, 13rem);
+  --font-size-h2: clamp(3.2rem, 6vw, 7.8rem);
+  --font-size-h3: clamp(2rem, 2vw, 3rem);
+  --font-size-p: clamp(1.8rem, 2vw, 2.2rem);
+  // Colors
+  --color-white: #fffcf3;
+  --color-green: #00bc8f;
+  // --color-green: #bc00b3;
+  --color-black: #2f2f2f;
+  --color-gray: #333231;
+  --color-error: #e71d40;
+  --color-done: #70e71d;
+  // Width
+  --width-project: clamp(3.4rem, 80%, 70rem);
+  --width-arrow: clamp(1.6rem, 80%, 4rem);
+  --width-m: clamp(1.2rem, 60%, 1.6rem);
+  --width-circle: clamp(1.6rem, 100%, 4rem);
+  //padding-inline
+  --pad-in-l: 15vw;
+  --pad-in-m: 10vw;
+  --pad-in-s: 5vw;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    // font-size: 100% 16px => 1rem = 16px
-    font-size: 62.5%; // Sorgt dafür 1 REM sind 10px sind
-    scroll-behavior: smooth;
-
+  // font-size: 100% 16px => 1rem = 16px
+  font-size: 62.5%; // Sorgt dafür 1 REM sind 10px sind
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--main-font-family);
-    color: var(--color-black);
+  font-family: var(--main-font-family);
+  color: var(--color-black);
 
-    &::-webkit-scrollbar {
-        display: none;
-        /* Chrome, Safari and Opera */
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        /* Firefox */
-    }
+  &::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
 }
 
 .disabledbutton {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .d-none {
-    display: none;
+  display: none;
 }

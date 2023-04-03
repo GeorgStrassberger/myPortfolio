@@ -1,68 +1,111 @@
+// No media query since the xxl breakpoint has no upper bound on its width
+// X-Large devices (large desktops, less than 1400px)
+// @media (max-width: 1399.98px) {
+//     section {}
+// }
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  section {
+    .nav-wrapper {
+      //   background-color: pink;
+      .menu {
+        .menu__color {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+}
+
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-    section {
-        .top-wrapper {
-            .box {
-                width: 40rem;
-                height: 5.6rem;
+  section {
+    .top-wrapper {
+      .box {
+        width: 40rem;
+        height: 5.6rem;
 
-                &::before {
-                    top: 60%;
-                    right: 38rem;
-                    width: 40rem;
-                    height: 5rem;
-                }
-            }
+        &::before {
+          top: 60%;
+          right: 38rem;
+          width: 40rem;
+          height: 5rem;
         }
+      }
     }
+    .nav-wrapper {
+      //   background-color: red;
+      .menu {
+        gap: 2rem;
+        .menu__color {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+
+      .navAnker {
+        display: none;
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-    section {
-        .top-wrapper {
-            .box {
-                width: 30rem;
-                height: 5.6rem;
+  section {
+    .top-wrapper {
+      .box {
+        width: 30rem;
+        height: 5.6rem;
 
-                &::before {
-                    top: 60%;
-                    right: 27.5rem;
-                    width: 30rem;
-                    height: 5.6rem;
-                }
-            }
+        &::before {
+          top: 60%;
+          right: 27.5rem;
+          width: 30rem;
+          height: 5.6rem;
         }
+      }
     }
+    .nav-wrapper {
+      //   background-color: green;
+      .menu {
+        .menu__color {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+    .navAnker {
+      display: none;
+    }
+  }
 }
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    section {
-        .top-wrapper {
-            gap: 0.8rem;
+  section {
+    .top-wrapper {
+      gap: 0.8rem;
 
-            .box {
-                width: 25rem;
-                height: 5.6rem;
+      .box {
+        width: 25rem;
+        height: 5.6rem;
 
-                &::before {
-                    top: 60%;
-                    right: 23rem;
-                    width: 25rem;
-                    height: 5.6rem;
-                }
-            }
+        &::before {
+          top: 60%;
+          right: 23rem;
+          width: 25rem;
+          height: 5.6rem;
         }
-
-        .nav-wrapper {
-            .navAnker {
-                display: none;
-            }
-
-            // img {
-            //     height: 2.4rem;
-            // }
-        }
+      }
     }
+
+    .nav-wrapper {
+      //   background-color: blue;
+      .navAnker {
+        display: none;
+      }
+    }
+  }
 }

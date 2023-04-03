@@ -1,7 +1,7 @@
 section {
   position: relative;
   height: var(--header-height);
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -90,13 +90,16 @@ section {
     padding-inline: var(--pad-in-l);
     height: var(--header-height);
     width: 100%;
-
+    .nav__logo {
+      height: 3.5rem;
+      cursor: pointer;
+    }
     .navAnker {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      gap: 3.2rem;
+      gap: 3rem;
 
       a {
         font-family: var(--sec-font-family);
@@ -109,27 +112,53 @@ section {
         }
       }
     }
-    .nav__tanslate {
+    .menu {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: var(--color-black);
-      font-size: var(--font-size-h3);
-      font-family: var(--sec-font-family);
-      .nav__tanslate__btn {
-        text-decoration: none;
-        cursor: pointer;
-        &:hover {
-          color: var(--color-green);
+      gap: 3rem;
+      .menu__color {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: crosshair;
+      }
+
+      .menu__color::-webkit-color-swatch {
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+      }
+
+      .menu__color::-webkit-color-swatch-wrapper {
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+      }
+
+      .menu__tanslate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: var(--color-black);
+        font-size: var(--font-size-h3);
+        font-family: var(--sec-font-family);
+        .menu__tanslate__btn {
+          text-decoration: none;
+          cursor: pointer;
+          &:hover {
+            color: var(--color-green);
+          }
         }
       }
-    }
-
-    img {
-      width: clamp(2.4rem, 3.8vw, 4rem);
-      cursor: pointer;
+      .menu__btn {
+        height: 3.5rem;
+        width: 3.5rem;
+        cursor: pointer;
+      }
     }
   }
 
@@ -177,24 +206,4 @@ section {
   animation-iteration-count: 1 !important;
   animation-direction: normal !important;
   animation-fill-mode: forwards !important;
-}
-
-input[type="color"] {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: crosshair;
-}
-
-input[type="color"]::-webkit-color-swatch {
-  border: none;
-  border-radius: 50%;
-  padding: 0;
-}
-
-input[type="color"]::-webkit-color-swatch-wrapper {
-  border: none;
-  border-radius: 50%;
-  padding: 0;
 }
