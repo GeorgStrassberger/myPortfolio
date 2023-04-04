@@ -7,11 +7,9 @@
     </p>
   </div>
 
-  <!-- component -->
   <app-project
     *ngFor="let project of projects; let i = index"
     [project]="project"
     [index]="i + 1"
   ></app-project>
-  <!-- component -->
 </section>

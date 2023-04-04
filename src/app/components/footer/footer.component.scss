@@ -9,9 +9,11 @@ footer {
   gap: 0.8rem;
 
   .links {
-    width: clamp(6rem, 50vw, 20rem);
+    width: clamp(6rem, 50vw, 22rem);
     display: flex;
+    gap: 8px;
     justify-content: space-between;
+    white-space: nowrap;
   }
 
   .top-wrapper {

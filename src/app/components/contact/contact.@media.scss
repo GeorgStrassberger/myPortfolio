@@ -9,38 +9,41 @@
 // }
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-    .outer {
-        gap: 4.8rem;
+  .outer {
+    gap: 4.8rem;
 
-        .inner {
-            form {
-                gap: 1.6rem;
-                width: 100% !important;
-            }
-        }
+    .inner {
+      form {
+        gap: 1.6rem;
+        width: 100% !important;
+      }
+      .wrapper {
+        right: var(--pad-in-l);
+      }
     }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-    .outer {
-        gap: 4rem;
+  .outer {
+    gap: 4rem;
 
-        .wrapper {
-            right: 2.4rem;
-            width: 3.2rem;
-        }
+    .wrapper {
+      right: var(--pad-in-l);
+      width: 3.2rem;
     }
+  }
 }
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .outer {
-        gap: 3.2rem;
+  .outer {
+    gap: 3.2rem;
 
-        .wrapper {
-            right: 0.4rem;
-            width: 2.4rem;
-        }
+    .wrapper {
+      right: var(--pad-in-l);
+      width: 2.4rem;
     }
+  }
 }

@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NavigationService {
-
   isMenuOpen: boolean = false;
 
   MENU_IMAGES: string[] = [
@@ -14,11 +12,10 @@ export class NavigationService {
     '../../../assets/images/menu/menu2.png',
     '../../../assets/images/menu/menu3.png',
     '../../../assets/images/menu/menu4.png',
-    '../../../assets/images/menu/menu5.png'
+    '../../../assets/images/menu/menu5.png',
   ];
 
-
-  constructor(public router: Router) { }
+  constructor(public router: Router) {}
 
   forceNavigate(name: string) {
     this.router
@@ -32,11 +29,12 @@ export class NavigationService {
     this.closeNavMenu();
   }
 
-
   openNavMenu() {
     if (!this.isMenuOpen) {
-      console.log('open Menu')
-      let kopf: HTMLDivElement = document.getElementById('header') as HTMLDivElement;
+      console.log('open Menu');
+      let kopf: HTMLDivElement = document.getElementById(
+        'header'
+      ) as HTMLDivElement;
       let top = document.getElementById('top') as HTMLDivElement;
       let bot = document.getElementById('bot') as HTMLDivElement;
 
@@ -50,21 +48,20 @@ export class NavigationService {
 
   closeNavMenu() {
     if (this.isMenuOpen) {
-      console.log('closing Menu')
+      console.log('closing Menu');
       let kopf = document.getElementById('header') as HTMLDivElement;
       let top = document.getElementById('top') as HTMLDivElement;
       let bot = document.getElementById('bot') as HTMLDivElement;
 
       setTimeout(() => {
         kopf.classList.remove('collapsible');
-      }, 1000)
+      }, 1000);
       top.classList.remove('animateContent');
       bot.classList.remove('animateFooter');
       this.closeBtnAnimation();
       this.isMenuOpen = false;
     }
   }
-
 
   /**
    * Disable a HTMLElement with ID for TIME milliseconds,
@@ -80,12 +77,11 @@ export class NavigationService {
     }, time);
   }
 
-
   openBtnAnimation() {
     let i = 0;
-    const menu = document.getElementById('menu') as HTMLImageElement;
-    const TIMER = setInterval(() => {
-      i++
+    let menu = document.getElementById('menu_btn') as HTMLImageElement;
+    let TIMER = setInterval(() => {
+      i++;
       menu.src = this.MENU_IMAGES[i];
       if (i === 4) {
         clearInterval(TIMER);
@@ -93,11 +89,10 @@ export class NavigationService {
     }, 100);
   }
 
-
   closeBtnAnimation() {
     let i = 4;
-    const menu = document.getElementById('menu') as HTMLImageElement;
-    const TIMER = setInterval(() => {
+    let menu = document.getElementById('menu_btn') as HTMLImageElement;
+    let TIMER = setInterval(() => {
       i--;
       menu.src = this.MENU_IMAGES[i];
       if (i === 0) {

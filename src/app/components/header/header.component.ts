@@ -23,17 +23,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     // this.getColor();
-    this.resetColor();
-  }
-
-  resetColor() {
-    document.documentElement.style.setProperty('--color-green', '#00BC8F');
-  }
-
-  getColor() {
-    const color = document.getElementById('color')! as HTMLInputElement;
-    console.log('color: ', color.value);
-    document.documentElement.style.setProperty('--color-green', color.value);
+    // this.resetColor();
   }
 
   toggleMenuBtn(): void {
@@ -45,5 +35,15 @@ export class HeaderComponent implements OnInit {
       this.navService.closeNavMenu();
     }
     this.navService.disabledClickFor(1000, 'menu');
+  }
+
+  resetColor() {
+    document.documentElement.style.setProperty('--color-green', '#00BC8F');
+  }
+
+  getColor() {
+    const color = document.getElementById('color')! as HTMLInputElement;
+    console.log('color: ', color.value);
+    document.documentElement.style.setProperty('--color-green', color.value);
   }
 }
