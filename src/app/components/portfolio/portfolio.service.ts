@@ -12,15 +12,15 @@ export class PortfolioService {
       'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       '/assets/images/projects/pokedex.png',
       'https://github.com/GeorgStrassberger/Pokedex',
-      'https://www.georg-strassberger.de/'
+      'http://pokedex.georg-strassberger.de/'
     ),
     new Project(
       'Ring of Fire',
       ['Angular', 'Firebase', 'TypeScript', 'HTML', 'CSS'],
       'Is a Carddrinking game, every player has to pick up a card from the stack, and the rulse explain who has to drink.',
-      '/assets/images/projects/ringoffire.jpg',
+      '/assets/images/projects/rof.png',
       'https://github.com/GeorgStrassberger/RingOfFire',
-      'https://www.georg-strassberger.de/'
+      'http://ring-of-fire.georg-strassberger.de/'
     ),
     new Project(
       'Join',
@@ -28,7 +28,7 @@ export class PortfolioService {
       'A Kanban board to create Tasks and following the status of the task.',
       '/assets/images/projects/join.png',
       'https://github.com/abaraev95/Join---Project-Management-System',
-      'https://www.georg-strassberger.de/'
+      'http://join.georg-strassberger.de/'
     ),
     new Project(
       'My Homepage',
@@ -42,17 +42,17 @@ export class PortfolioService {
       'El Pollo Loco',
       ['JavaScript', 'OOP', 'HTML', 'SCSS'],
       'El Pollo Loco is a small 2D Jump & Run Game, to lern the OOP in JavaScript.',
-      '/assets/images/projects/sharkie.png',
+      '/assets/images/projects/epl.png',
       'https://github.com/GeorgStrassberger/El-Pollo-Loco',
       'http://el-pollo-loco.georg-strassberger.de/'
     ),
     new Project(
       'Drag & Drop',
       ['TypeScript', 'OOP', 'HTML', 'CSS'],
-      'You can create Tasks and change the status form Active to Finished, to lern the OOP in TypeScript.',
-      '/assets/images/projects/crm.png',
+      'You can create Tasks and change the status form Active to Finished with drag & drop.',
+      '/assets/images/projects/ddp.jpg',
       'https://github.com/GeorgStrassberger/Drag-Drop-Project',
-      'https://www.georg-strassberger.de/'
+      'http://dragdrop.georg-strassberger.de/'
     ),
   ];
 

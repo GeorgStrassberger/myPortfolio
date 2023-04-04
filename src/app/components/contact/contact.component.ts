@@ -2,6 +2,7 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
+import { PopupService } from '../popup/popup.service';
 
 @Component({
   selector: 'app-contact',
@@ -18,7 +19,8 @@ export class ContactComponent implements OnInit, DoCheck {
 
   constructor(
     public navService: NavigationService,
-    public translate: TranslateService
+    public translate: TranslateService,
+    public popupService: PopupService
   ) {}
 
   ngDoCheck(): void {
@@ -33,6 +35,7 @@ export class ContactComponent implements OnInit, DoCheck {
   async onSubmit(): Promise<void> {
     await this.createFormData()
       .then(() => {
+        this.popupService.onOpenPopup();
         this.contactForm.reset();
       })
       .catch(() => {
@@ -63,12 +66,15 @@ export class ContactComponent implements OnInit, DoCheck {
       { method: 'POST', body: fd }
     );
     if (!response.ok) {
+      console.log('My Error message');
       return Promise.reject('My Error message');
     }
     const isSend = await response.json();
     if (isSend === false) {
+      console.log('My Error message');
       return Promise.reject('My Error message');
     }
+    console.log('Message was send', isSend);
     return Promise.resolve();
   }
 }
