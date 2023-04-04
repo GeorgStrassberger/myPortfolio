@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class PopupService {
-  isPopupOpen: boolean = true;
+  isPopupOpen: boolean = false;
   constructor() {}
 
   onOpenPopup(): void {

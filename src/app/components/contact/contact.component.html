@@ -1,14 +1,14 @@
 <section id="contact">
   <div class="triangle"></div>
   <div class="outer">
-    <h2>Say Hi!</h2>
+    <h2 translate>Say Hi!</h2>
     <div class="inner">
-      <h3>Want to discuss a new project?</h3>
-      <p>Say hello! let's discuss your ideas and make it happen</p>
+      <h3 translate>Want to discuss a new project?</h3>
+      <p translate>Say hello! let's discuss your ideas and make it happen</p>
       <!-- FORM START-->
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="box">
-          <label class="d-none" for="">Your Name</label>
+          <label translate class="d-none" for="name">Your Name</label>
           <input
             id="name"
             type="text"
@@ -17,6 +17,7 @@
             placeholder="Your name"
           />
           <span
+            translate
             [ngClass]="{
               inValidFont:
                 !contactForm.controls['name'].valid &&
@@ -26,7 +27,7 @@
           >
         </div>
         <div class="box">
-          <label class="d-none" for="email">Your email</label>
+          <label translate class="d-none" for="email">Your email</label>
           <input
             id="email"
             type="text"
@@ -35,6 +36,7 @@
             placeholder="Your email"
           />
           <span
+            translate
             [ngClass]="{
               inValidFont:
                 !contactForm.controls['email'].valid &&
@@ -44,7 +46,7 @@
           >
         </div>
         <div class="box">
-          <label class="d-none" for="message">Your message</label>
+          <label translate class="d-none" for="message">Your message</label>
           <textarea
             id="message"
             name="message"
@@ -54,6 +56,7 @@
             placeholder="Your message"
           ></textarea>
           <span
+            translate
             [ngClass]="{
               inValidFont:
                 !contactForm.controls['message'].valid &&
@@ -62,7 +65,12 @@
             >Your message is empty</span
           >
         </div>
-        <button id="submit" type="submit" [disabled]="!contactForm.valid">
+        <button
+          translate
+          id="submit"
+          type="submit"
+          [disabled]="!contactForm.valid"
+        >
           Send message
         </button>
       </form>

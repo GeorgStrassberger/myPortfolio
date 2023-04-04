@@ -1,23 +1,38 @@
 <footer>
-    <div class="top-wrapper">
-        <a routerLink="/#home" (click)="navService.forceNavigate('home')">
-            <img src="../../../assets/images/icons/logo_white.png" alt="myLogo">
-        </a>
-        <div class="links">
-            <a href="https://github.com/GeorgStrassberger" target="_blank"><img src="../../../assets/images/icons/github-8-48.png" alt="GitHub"></a>
-            <a routerLink="/#contact" (click)="navService.forceNavigate('contact')">
-                <img src="../../../assets/images/icons/mail.png" alt="Mail">
-            </a>
-            <a href="https://de.linkedin.com/in/georg-stra%C3%9Fberger-85b563196" target="_blank">
-                <img src="../../../assets/images/icons/linkedin-3-48.ico" alt="LinkedIn">
-            </a>
-        </div>
+  <div class="top-wrapper">
+    <a routerLink="/#home" (click)="navService.forceNavigate('home')">
+      <img src="../../../assets/images/icons/logo_white.png" alt="myLogo" />
+    </a>
+    <div class="links">
+      <a href="https://github.com/GeorgStrassberger" target="_blank"
+        ><img src="../../../assets/images/icons/github-8-48.png" alt="GitHub"
+      /></a>
+      <a routerLink="/#contact" (click)="navService.forceNavigate('contact')">
+        <img src="../../../assets/images/icons/mail.png" alt="Mail" />
+      </a>
+      <a
+        href="https://de.linkedin.com/in/georg-stra%C3%9Fberger-85b563196"
+        target="_blank"
+      >
+        <img
+          src="../../../assets/images/icons/linkedin-3-48.ico"
+          alt="LinkedIn"
+        />
+      </a>
     </div>
-    <div class="bot-wrapper">
-        <div>&copy; Georg Straßberger 2023</div>
-        <div class="links">
-            <a routerLink="imprint" (click)="this.navService.closeNavMenu()">Impressum</a>
-            <a routerLink="data-protection" (click)="this.navService.closeNavMenu()">Datenschutz</a>
-        </div>
+  </div>
+  <div class="bot-wrapper">
+    <div>&copy; Georg Straßberger 2023</div>
+    <div class="links">
+      <a translate routerLink="imprint" (click)="this.navService.closeNavMenu()"
+        >Impressum</a
+      >
+      <a
+        translate
+        routerLink="data-protection"
+        (click)="this.navService.closeNavMenu()"
+        >Datenschutz</a
+      >
     </div>
+  </div>
 </footer>
