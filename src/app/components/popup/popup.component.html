@@ -1,9 +1,5 @@
-<div class="overlay">
-  <div
-    class="popup"
-    (click)="this.popupService.onClosePopup($event)"
-    title="close Popup"
-  >
+<div (click)="this.popupService.onClosePopup($event)" class="overlay">
+  <div class="popup" title="close Popup">
     <h2 translate>Message</h2>
     <div translate class="content">Email send!</div>
   </div>

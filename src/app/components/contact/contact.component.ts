@@ -16,6 +16,7 @@ import { PopupService } from '../popup/popup.service';
 export class ContactComponent implements OnInit, DoCheck {
   isValid: boolean = false;
   contactForm!: FormGroup;
+  sendSound: HTMLAudioElement = new Audio('../../../assets/sounds/send.wav');
 
   constructor(
     public navService: NavigationService,
@@ -25,7 +26,6 @@ export class ContactComponent implements OnInit, DoCheck {
 
   ngDoCheck(): void {
     this.isValid = this.contactForm.valid;
-    console.log('isValid', this.isValid);
   }
 
   ngOnInit(): void {
@@ -41,7 +41,7 @@ export class ContactComponent implements OnInit, DoCheck {
       .catch(() => {
         // Error Handling
       });
-    // play Sound & show PopUp
+    this.sendSound.play();
   }
 
   initForm(): void {
