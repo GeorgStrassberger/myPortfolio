@@ -1,75 +1,93 @@
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  .wrapper-img {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    mix-blend-mode: luminosity;
+@media (hover: hover) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     &:hover {
-      mix-blend-mode: normal;
+      .wrapper-info .content {
+        animation: fadeInBoxLeft;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
     }
-
-    .frame {
-      position: absolute;
-      z-index: 2;
-      height: 100%;
-      width: var(--width-project);
-      border: 0.4rem solid var(--color-black);
-      opacity: 0;
-      transition: all 125ms ease;
+    .wrapper-img {
+      display: flex;
+      position: relative;
+      z-index: 1;
+      mix-blend-mode: luminosity;
 
       &:hover {
-        opacity: 1;
-        transform: translate(1.6rem, 1.6rem);
+        mix-blend-mode: normal;
+      }
+      .frame {
+        position: absolute;
+        z-index: 2;
+        height: 100%;
+        width: var(--width-project);
+        border: 0.4rem solid var(--color-black);
+        opacity: 0;
+        transition: all 125ms ease;
+
+        &:hover {
+          opacity: 1;
+          transform: translate(1.6rem, 1.6rem);
+
+          .circal {
+            animation-name: rotateArrowLeft;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+          }
+        }
 
         .circal {
-          animation-name: rotateArrowLeft;
-          animation-duration: 0.5s;
-          animation-timing-function: linear;
-          animation-iteration-count: 1;
-          animation-fill-mode: forwards;
-        }
+          display: flex;
+          justify-content: center;
+          padding: 1rem;
+          position: absolute;
+          z-index: 3;
+          top: 50%;
+          right: 0;
+          transform: translate(calc(50% + 0.4rem), -50%) rotate(-90deg);
+          background-color: var(--color-black);
+          border-radius: 100%;
 
-        .content {
-          animation: fadeInBoxLeft;
-          animation-duration: 0.5s;
-          animation-timing-function: ease-out;
-          animation-iteration-count: 1;
-          animation-fill-mode: forwards;
-        }
-      }
-
-      .circal {
-        display: flex;
-        justify-content: center;
-        padding: 1rem;
-        position: absolute;
-        z-index: 3;
-        top: 50%;
-        right: 0;
-        transform: translate(calc(50% + 0.4rem), -50%) rotate(-90deg);
-        background-color: var(--color-black);
-        border-radius: 100%;
-
-        img {
-          aspect-ratio: 1/1;
-          width: var(--width-circle);
+          img {
+            aspect-ratio: 1/1;
+            width: var(--width-circle);
+          }
         }
       }
+      img {
+        width: var(--width-project);
+      }
+    }
 
+    .wrapper-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      overflow: hidden;
+      position: relative;
+
+      span {
+        font-family: var(-main-font-family);
+        font-weight: 700;
+        font-size: var(--font-size-h3);
+      }
       .content {
         width: 100%;
-        position: absolute;
-        // top: 5rem;
-        left: 0;
-        z-index: 0;
-        padding-left: 8rem;
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
+        position: absolute;
+        top: 1.6rem;
+        transform: translate(-100%);
 
         h3 {
           font-family: var(--main-font-family);
@@ -79,7 +97,6 @@ section {
         }
 
         .tech {
-          // white-space: nowrap;
           font-family: var(--sec-font-family);
           font-size: var(--font-size-p);
           color: var(--color-green);
@@ -113,24 +130,6 @@ section {
           }
         }
       }
-    }
-
-    img {
-      width: var(--width-project);
-    }
-  }
-
-  .wrapper-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-
-    span {
-      font-family: var(-main-font-family);
-      font-weight: 700;
-      font-size: var(--font-size-h3);
     }
   }
 }

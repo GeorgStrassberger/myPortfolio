@@ -66,6 +66,16 @@
     display: grid;
     grid-template-columns: 1fr;
 
+    &:hover {
+      .wrapper-info .content {
+        animation: fadeInBoxTop;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+    }
+
     .wrapper-img {
       .frame {
         width: 100%;
@@ -89,28 +99,6 @@
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
           }
-
-          .content {
-            animation: fadeInBoxTop;
-            animation-duration: 0.5s;
-            animation-timing-function: ease-out;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-          }
-        }
-
-        .content {
-          position: absolute;
-          padding-top: 50px;
-          height: 100%;
-          width: 100%;
-          top: 0;
-          left: 0;
-          padding-inline: 0;
-
-          .links {
-            gap: 1.6rem;
-          }
         }
       }
 
@@ -122,6 +110,18 @@
     .wrapper-info {
       padding-top: 1.6rem;
       height: 30rem;
+      .content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-inline: 0;
+
+        .links {
+          gap: 1.6rem;
+        }
+      }
     }
   }
 }

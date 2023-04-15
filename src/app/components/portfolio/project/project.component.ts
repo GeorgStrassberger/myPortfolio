@@ -10,6 +10,7 @@ import { Project } from './project.model';
     './project.component.scss',
     './project.@media.scss',
     './project.@keyframes.scss',
+    './project.component.hover.scss',
   ],
 })
 export class ProjectComponent implements OnInit {
