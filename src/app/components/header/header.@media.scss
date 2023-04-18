@@ -114,3 +114,17 @@
     }
   }
 }
+
+@media (max-width: 379.98px) {
+  section {
+    .top-wrapper {
+      gap: 1rem;
+      .box {
+        height: 3rem;
+        a {
+          font-size: var(--font-size-h2);
+        }
+      }
+    }
+  }
+}

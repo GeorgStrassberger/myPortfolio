@@ -22,14 +22,14 @@ export class PortfolioService {
       'https://github.com/GeorgStrassberger/El-Pollo-Loco',
       'http://el-pollo-loco.georg-strassberger.de/'
     ),
-    // new Project(
-    //   'Ring of Fire',
-    //   ['Angular', 'Firebase', 'TypeScript'],
-    //   'Is a Carddrinking game, every player has to pick up a card from the stack, and the rulse explain who has to drink.',
-    //   '/assets/images/projects/rof.png',
-    //   'https://github.com/GeorgStrassberger/RingOfFire',
-    //   'http://ring-of-fire.georg-strassberger.de/'
-    // ),
+    new Project(
+      'Ring of Fire',
+      ['Angular', 'Firebase', 'TypeScript'],
+      'Is a Carddrinking game, every player has to pick up a card from the stack, and the rulse explain who has to drink.',
+      '/assets/images/projects/rof.png',
+      'https://github.com/GeorgStrassberger/RingOfFire',
+      'http://ring-of-fire.georg-strassberger.de/'
+    ),
     // new Project(
     //   'Join',
     //   ['JavaScript', 'HTML', 'CSS'],
@@ -46,7 +46,14 @@ export class PortfolioService {
       'https://github.com/GeorgStrassberger/myPortfolio',
       'https://www.georg-strassberger.de/'
     ),
-
+    new Project(
+      'Photography-Masterclass',
+      ['SCSS', 'CSS', 'HTML'],
+      'A Webpage created with SCSS/HTML to lern BEM (Block Element Modifier), to write and read better CSS.',
+      '/assets/images/projects/photography.jpg',
+      'https://github.com/GeorgStrassberger/Photography-Project',
+      'http://photography.georg-strassberger.de/'
+    ),
     new Project(
       'Drag & Drop',
       ['TypeScript', 'OOP', 'HTML', 'CSS'],
