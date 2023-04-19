@@ -9,68 +9,33 @@
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="box">
           <label translate class="d-none" for="name">Your Name</label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            formControlName="name"
-            placeholder="Your name"
-          />
-          <span
-            translate
-            [ngClass]="{
+          <input id="name" type="text" name="name" formControlName="name" placeholder="Your name" />
+          <span translate [ngClass]="{
               inValidFont:
                 !contactForm.controls['name'].valid &&
                 contactForm.controls['name'].touched
-            }"
-            >Your name is required</span
-          >
+            }">Your name is required</span>
         </div>
         <div class="box">
           <label translate class="d-none" for="email">Your email</label>
-          <input
-            id="email"
-            type="text"
-            name="email"
-            formControlName="email"
-            placeholder="Your email"
-          />
-          <span
-            translate
-            [ngClass]="{
+          <input id="email" type="text" name="email" formControlName="email" placeholder="Your email" />
+          <span translate [ngClass]="{
               inValidFont:
                 !contactForm.controls['email'].valid &&
                 contactForm.controls['email'].touched
-            }"
-            >Your Email is required</span
-          >
+            }">Your Email is required</span>
         </div>
         <div class="box">
           <label translate class="d-none" for="message">Your message</label>
-          <textarea
-            id="message"
-            name="message"
-            formControlName="message"
-            cols="30"
-            rows="10"
-            placeholder="Your message"
-          ></textarea>
-          <span
-            translate
-            [ngClass]="{
+          <textarea id="message" name="message" formControlName="message" cols="30" rows="10"
+            placeholder="Your message"></textarea>
+          <span translate [ngClass]="{
               inValidFont:
                 !contactForm.controls['message'].valid &&
                 contactForm.controls['message'].touched
-            }"
-            >Your message is empty</span
-          >
+            }">Your message is empty</span>
         </div>
-        <button
-          translate
-          id="submit"
-          type="submit"
-          [disabled]="!contactForm.valid"
-        >
+        <button translate id="submit" type="submit" [disabled]="!contactForm.valid">
           Send message
         </button>
       </form>
@@ -78,11 +43,7 @@
       <app-popup *ngIf="this.popupService.isPopupOpen"></app-popup>
     </div>
     <div class="wrapper">
-      <a
-        routerLink="/#home"
-        (click)="navService.forceNavigate('home')"
-        class="arrow"
-      >
+      <a routerLink="/home" (click)="navService.forceNavigate('home')" class="arrow">
         <img src="../../../assets/images/arrows/arrow7.png" alt="arrow_up" />
       </a>
     </div>

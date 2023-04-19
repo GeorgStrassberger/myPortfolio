@@ -5,11 +5,10 @@ import { LandingComponent } from './landing/landing.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { DataProtectionComponent } from './components/data-protection/data-protection.component';
 
-
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'imprint', component: ImprintComponent },
-  { path: 'data-protection', component: DataProtectionComponent }
+  { path: 'data-protection', component: DataProtectionComponent },
 ];
 
 const config = {
@@ -23,6 +22,6 @@ const config = {
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, <ExtraOptions>config)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

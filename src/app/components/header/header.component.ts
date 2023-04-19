@@ -21,17 +21,12 @@ export class HeaderComponent implements OnInit {
     public translate: TranslateService
   ) {}
 
-  ngOnInit(): void {
-    // this.getColor();
-    // this.resetColor();
-  }
+  ngOnInit(): void {}
 
   toggleMenuBtn(): void {
     if (!this.navService.isMenuOpen) {
-      // this.navService.openBtnAnimation();
       this.navService.openNavMenu();
     } else {
-      // this.navService.closeBtnAnimation();
       this.navService.closeNavMenu();
     }
     this.navService.disabledClickFor(1000, 'menu');
@@ -43,7 +38,6 @@ export class HeaderComponent implements OnInit {
 
   getColor() {
     const color = document.getElementById('color')! as HTMLInputElement;
-    console.log('color: ', color.value);
     document.documentElement.style.setProperty('--color-green', color.value);
   }
 }
