@@ -31,7 +31,6 @@ export class NavigationService {
 
   openNavMenu() {
     if (!this.isMenuOpen) {
-      console.log('open Menu');
       let kopf: HTMLDivElement = document.getElementById(
         'header'
       ) as HTMLDivElement;
@@ -48,7 +47,6 @@ export class NavigationService {
 
   closeNavMenu() {
     if (this.isMenuOpen) {
-      console.log('closing Menu');
       let kopf = document.getElementById('header') as HTMLDivElement;
       let top = document.getElementById('top') as HTMLDivElement;
       let bot = document.getElementById('bot') as HTMLDivElement;

@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
     } else {
       this.navService.closeNavMenu();
     }
-    this.navService.disabledClickFor(1000, 'menu');
+    this.navService.disabledClickFor(1000, 'menu_btn');
   }
 
   resetColor() {
