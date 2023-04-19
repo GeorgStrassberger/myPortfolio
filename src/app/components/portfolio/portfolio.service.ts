@@ -47,7 +47,7 @@ export class PortfolioService {
       'https://www.georg-strassberger.de/'
     ),
     new Project(
-      'Photography-Masterclass',
+      'Photography',
       ['SCSS', 'CSS', 'HTML'],
       'A Webpage created with SCSS/HTML to lern BEM (Block Element Modifier), to write and read better CSS.',
       '/assets/images/projects/photography.jpg',

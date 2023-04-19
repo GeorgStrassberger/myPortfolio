@@ -1,17 +1,10 @@
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-    section {
-        gap: 0;
+  section {
+    gap: 0;
 
-        .wrapper {
-            margin-bottom: 3.2rem;
-        }
+    .wrapper {
+      margin-bottom: 3.2rem;
     }
+  }
 }
-
-// X-Small devices (portrait phones, less than 576px)
-// @media (max-width: 575.98px) {
-//     section {
-//         gap: 8px;
-//     }
-// }

@@ -8,9 +8,9 @@
   "Say hello! let's discuss your ideas and make it happen": "Say hello! let's discuss your ideas and make it happen",
   "Your Name": "Your Name",
   "Your name is required": "Your name is required",
-  "Your email": "Your email",
+  "Your email": "Your Email",
   "Your Email is required": "Your Email is required",
-  "Your message": "Your message",
+  "Your message": "Your Message",
   "Your message is empty": "Your message is empty",
   "Send message": "Send message",
   "Impressum": "Imprint",
@@ -22,10 +22,9 @@
   "Frontend Developer": "Frontend Developer",
   "Scroll": "Scroll",
   "Down": "Down",
-  "Message": "Message",
-  "Email send!": "Email send!",
+  "Email send": "Email send",
+  "successful": "successful",
   "Feel free to try out my latest developn´ment projects and look into their code.": "Feel free to try out my latest developn´ment projects and look into their code.",
   "Open": "Open",
-  "My skills": "My skills",
-  "PROJECT_HOMEPAGE_DESCRIPTION": "My Homepage build in Angular, to represent me and my projects ENGLISH"
+  "My skills": "My skills"
 }

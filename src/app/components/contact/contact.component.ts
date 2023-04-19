@@ -30,6 +30,7 @@ export class ContactComponent implements OnInit, DoCheck {
 
   ngOnInit(): void {
     this.initForm();
+    this.sendSound.volume = 0.2;
   }
 
   async onSubmit(): Promise<void> {

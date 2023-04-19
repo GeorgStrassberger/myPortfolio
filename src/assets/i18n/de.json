@@ -9,7 +9,7 @@
   "Your Name": "Ihren Namen",
   "Your name is required": "Ihr Name ist erforderlich",
   "Your email": "Ihre Email",
-  "Your Email is required": "Ihr Name ist erforderlich",
+  "Your Email is required": "Ihr Email ist erforderlich",
   "Your message": "Ihre Nachricht",
   "Your message is empty": "Deine Nachricht ist leer",
   "Send message": "Nachricht senden",
@@ -22,10 +22,9 @@
   "Frontend Developer": "Web Entwickler",
   "Scroll": "Scroll",
   "Down": "Runter",
-  "Message": "Nachricht",
-  "Email send!": "Email wurde gesendet!",
+  "Email send": "E-mail-Versand",
+  "successful": "erfolgreich",
   "Feel free to try out my latest developn´ment projects and look into their code.": "Probieren Sie gerne meine neuesten Entwicklungsprojekte aus und schauen Sie sich deren Code an.",
   "Open": "Öffnen",
-  "My skills": "Fähigkeiten",
-  "PROJECT_HOMEPAGE_DESCRIPTION": "My Homepage build in Angular, to represent me and my projects Deutsch"
+  "My skills": "Fähigkeiten"
 }
