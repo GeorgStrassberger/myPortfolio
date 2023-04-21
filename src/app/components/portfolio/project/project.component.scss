@@ -11,16 +11,30 @@
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
       }
+      //start hier
+      .wrapper-img {
+        mix-blend-mode: normal;
+      }
+      .frame {
+        opacity: 1 !important;
+        transform: translate(1.6rem, 1.6rem) !important;
+
+        .circal {
+          animation-name: rotateArrowLeft;
+          animation-duration: 0.5s;
+          animation-timing-function: linear;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+      }
     }
+
     .wrapper-img {
       display: flex;
       position: relative;
       z-index: 1;
       mix-blend-mode: luminosity;
 
-      &:hover {
-        mix-blend-mode: normal;
-      }
       .frame {
         position: absolute;
         z-index: 2;
@@ -29,19 +43,6 @@
         border: 0.4rem solid var(--color-black);
         opacity: 0;
         transition: all 125ms ease;
-
-        &:hover {
-          opacity: 1;
-          transform: translate(1.6rem, 1.6rem);
-
-          .circal {
-            animation-name: rotateArrowLeft;
-            animation-duration: 0.5s;
-            animation-timing-function: linear;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-          }
-        }
 
         .circal {
           display: flex;
@@ -85,8 +86,6 @@
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
-        position: absolute;
-        top: 1.6rem;
         transform: translate(-100%);
         opacity: 0;
 

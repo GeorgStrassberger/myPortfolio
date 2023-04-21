@@ -2,9 +2,9 @@
 
 ########### CONFIG ###############
 
-$recipient = 'georg.strassberger@googlemail.com';
+$recipient = 'info@georg-strassberger.de';
 //soll später raus 
-$redirect = 'https://www.georg-strassberger.de;
+$redirect = 'https://www.georg-strassberger.de';
 
 
 ########### CONFIG END ###########
