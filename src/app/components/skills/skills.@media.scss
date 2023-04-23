@@ -9,38 +9,42 @@
 // }
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-    section {
-        .wrapper {
-            padding-top: 6.4rem;
-            padding-bottom: 3.2rem;
-        }
+  section {
+    .wrapper {
+      padding-top: 6.4rem;
+      padding-bottom: 3.2rem;
     }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-    section {
-        .wrapper {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "html css js git" "ts ng material firebase" ". api scrum .";
-            gap: 2.4rem;
-            padding-top: 4.8rem;
-            padding-bottom: 2.4rem;
-        }
+  section {
+    .wrapper {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "html css js git" "ts ng material firebase" ". api scrum .";
+      gap: 2.4rem;
+      padding-top: 4.8rem;
+      padding-bottom: 2.4rem;
     }
+  }
 }
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    section {
-        .wrapper {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "html css" "js api" "git ts" "ng material" "firebase scrum";
-            gap: 1.6rem;
-            padding-top: 4rem;
-            padding-bottom: 1.6rem;
-        }
+  section {
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "html css" "js api" "git ts" "ng material" "firebase scrum";
+      gap: 1.6rem;
+      padding-top: 4rem;
+      padding-bottom: 1.6rem;
+
+      h2 {
+        padding: 0;
+      }
     }
+  }
 }

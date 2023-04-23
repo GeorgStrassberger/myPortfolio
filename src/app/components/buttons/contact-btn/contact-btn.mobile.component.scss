@@ -1,0 +1,27 @@
+// for mobile devices
+@media (hover: none) {
+  button {
+    font-family: var(--sec-font-family);
+    font-size: var(--font-size-p);
+    border: 0.4rem solid var(--color-black);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 125ms ease;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:hover {
+      border: 0.4rem solid var(--color-black);
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+
+    &:active {
+      color: var(--color-white);
+    }
+  }
+}

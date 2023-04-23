@@ -1,44 +1,66 @@
+@media (hover: hover) {
+  section {
+    .wrapper-text {
+      contact-btn {
+        display: block;
+        margin-top: 6rem;
+      }
+    }
+  }
+}
+
+@media (hover: none) {
+  section {
+    .wrapper-text {
+      contact-btn {
+        display: none;
+      }
+    }
+  }
+}
+
 // No media query since the xxl breakpoint has no upper bound on its width
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-    section {
-        gap: 3.2rem;
-        grid-template-columns: 1fr 20rem;
+  section {
+    // gap: 3.2rem;
+    grid-template-columns: 1fr 20rem;
+    padding-bottom: 2rem;
 
-        .wrapper-text {
-            button {
-                padding: 1.6rem 4.8rem;
-            }
-        }
+    .wrapper-text {
+      button {
+        padding: 1.6rem 4.8rem;
+      }
     }
+  }
 }
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    section {
-        grid-template-columns: 1fr;
+  section {
+    grid-template-columns: 1fr;
 
-        .wrapper-text {
-            article {
-                gap: 1.6rem;
-            }
+    .wrapper-text {
+      article {
+        gap: 1.6rem;
+      }
 
-            button {
-                display: none;
-            }
-        }
-
-        .wrapper-img {
-            justify-content: center;
-            position: relative;
-
-            .frame {
-                max-width: 20rem;
-            }
-
-            img {
-                max-width: 20rem;
-            }
-        }
+      button {
+        display: none;
+      }
     }
+
+    .wrapper-img {
+      justify-content: center;
+      position: relative;
+
+      .frame {
+        max-width: 20rem;
+      }
+
+      img {
+        max-width: 20rem;
+      }
+    }
+  }
 }

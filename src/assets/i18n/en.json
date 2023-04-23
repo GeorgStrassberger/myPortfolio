@@ -2,7 +2,6 @@
   "About me": "About me",
   "I am a Front-end deverloper based in Stuttgart, Germany. I help designers and companies to bring their ideas to real life. Creativity and logical thinking are skills that I have developed to connect ideas into quality products.": "I am a Front-end deverloper based in Stuttgart, Germany. I help designers and companies to bring their ideas to real life. Creativity and logical thinking are skills that I have developed to connect ideas into quality products.",
   "If you think I’d be a good match for your projects, contact me!": "If you think I’d be a good match for your projects, contact me!",
-  "Let's talk": "Let's talk",
   "Say Hi!": "Say Hi!",
   "Want to discuss a new project?": "Want to discuss a new project?",
   "Say hello! let's discuss your ideas and make it happen": "Say hello! let's discuss your ideas and make it happen",
@@ -27,5 +26,7 @@
   "Feel free to try out my latest developn´ment projects and look into their code.": "Feel free to try out my latest developn´ment projects and look into their code.",
   "Open": "Open",
   "My skills": "My skills",
-  "PROJECT_HOMEPAGE_DESCRIPTION": "PROJECT HOMEPAGE DESCRIPTION"
+  "Send a message": "Send a message",
+  "Let's talk": "Let's talk",
+  "PROJECT_HOMEPAGE_DESCRIPTION": "PROJECT DESCRIPTION"
 }

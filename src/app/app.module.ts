@@ -19,6 +19,8 @@ import { LandingComponent } from './landing/landing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FillupPipe } from './shared/pipes/fillup.pipe';
 import { ShortenPipe } from './shared/pipes/shorten.pipe';
+import { ContactButton } from './components/buttons/contact-btn/contact-btn.component';
+import { ProjectButton } from './components/buttons/project-btn/project-btn.component';
 // Tanslate
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -49,6 +51,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FillupPipe,
     ShortenPipe,
     PopupComponent,
+    ContactButton,
+    ProjectButton,
   ],
   imports: [
     BrowserModule,

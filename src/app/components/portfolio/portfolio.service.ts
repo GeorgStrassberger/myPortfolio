@@ -54,14 +54,14 @@ export class PortfolioService {
       'https://github.com/GeorgStrassberger/Photography-Project',
       'http://photography.georg-strassberger.de/'
     ),
-    new Project(
-      'Drag & Drop',
-      ['TypeScript', 'OOP', 'HTML', 'CSS'],
-      'You can create Tasks and change the status form Active to Finished with drag & drop.',
-      '/assets/images/projects/ddp.jpg',
-      'https://github.com/GeorgStrassberger/Drag-Drop-Project',
-      'http://dragdrop.georg-strassberger.de/'
-    ),
+    // new Project(
+    //   'Drag & Drop',
+    //   ['TypeScript', 'OOP', 'HTML', 'CSS'],
+    //   'You can create Tasks and change the status form Active to Finished with drag & drop.',
+    //   '/assets/images/projects/ddp.jpg',
+    //   'https://github.com/GeorgStrassberger/Drag-Drop-Project',
+    //   'http://dragdrop.georg-strassberger.de/'
+    // ),
   ];
 
   constructor() {}

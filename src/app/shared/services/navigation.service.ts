@@ -21,7 +21,7 @@ export class NavigationService {
     this.router
       .navigate(['/'], { fragment: name })
       .then((result) => {
-        console.log('result: ', result);
+        console.log(result);
       })
       .catch((error) => {
         console.error(error);
@@ -29,6 +29,9 @@ export class NavigationService {
     this.closeNavMenu();
   }
 
+  /**
+   * Add css classes, to animate the fadeIn effects, for the burgerMenu.
+   */
   openNavMenu() {
     if (!this.isMenuOpen) {
       let kopf: HTMLDivElement = document.getElementById(
@@ -45,6 +48,9 @@ export class NavigationService {
     }
   }
 
+  /**
+   * Remove css classes, to animate the fadeOut effects for the burgerMenu.
+   */
   closeNavMenu() {
     if (this.isMenuOpen) {
       let kopf = document.getElementById('header') as HTMLDivElement;
@@ -64,8 +70,9 @@ export class NavigationService {
   /**
    * Disable a HTMLElement with ID for TIME milliseconds,
    * toggle class .disabledbutton {pointer-events: none;}
-   * @param time
-   * @param id
+   * to prevent click spam on Element.
+   * @param time number
+   * @param id  string
    */
   disabledClickFor(time: number, id: string) {
     let elem = document.getElementById(id) as HTMLElement;
@@ -75,6 +82,9 @@ export class NavigationService {
     }, time);
   }
 
+  /**
+   * Start iteration images.
+   */
   openBtnAnimation() {
     let i = 0;
     let menu = document.getElementById('menu_btn') as HTMLImageElement;
@@ -87,6 +97,9 @@ export class NavigationService {
     }, 100);
   }
 
+  /**
+   * Start iteration images.
+   */
   closeBtnAnimation() {
     let i = 4;
     let menu = document.getElementById('menu_btn') as HTMLImageElement;

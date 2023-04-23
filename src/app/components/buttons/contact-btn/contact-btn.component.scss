@@ -1,0 +1,23 @@
+// for desktop
+@media (hover: hover) {
+  button {
+    font-family: var(--sec-font-family);
+    font-size: var(--font-size-p);
+    border: 0.4rem solid var(--color-black);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 2rem 6rem;
+    cursor: pointer;
+    transition: all 125ms ease;
+
+    &:hover {
+      border: 0.4rem solid var(--color-black);
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+
+    &:active {
+      color: var(--color-green);
+    }
+  }
+}

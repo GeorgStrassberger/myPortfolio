@@ -2,7 +2,6 @@
   "About me": "Über mich",
   "I am a Front-end deverloper based in Stuttgart, Germany. I help designers and companies to bring their ideas to real life. Creativity and logical thinking are skills that I have developed to connect ideas into quality products.": "Ich bin ein Frontend-Entwickler mit Sitz in Stuttgart, Deutschland. Ich helfe Designern und Unternehmen, ihre Ideen in die Realität umzusetzen. Kreativität und logisches Denken sind Fähigkeiten, die ich entwickelt habe, um Ideen zu Qualitätsprodukten zu verbinden.",
   "If you think I’d be a good match for your projects, contact me!": "Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
-  "Let's talk": "Lass uns reden",
   "Say Hi!": "Sag Hallo!",
   "Want to discuss a new project?": "Möchten Sie ein neues Projekt besprechen?",
   "Say hello! let's discuss your ideas and make it happen": "Sag Hallo! Lassen Sie uns Ihre Ideen besprechen und verwirklichen",
@@ -27,5 +26,7 @@
   "Feel free to try out my latest developn´ment projects and look into their code.": "Probieren Sie gerne meine neuesten Entwicklungsprojekte aus und schauen Sie sich deren Code an.",
   "Open": "Öffnen",
   "My skills": "Fähigkeiten",
-  "PROJECT_HOMEPAGE_DESCRIPTION": "PROJEKT INTERNETSEITE BESCHREIBUNG"
+  "Send a message": "Nachricht senden",
+  "Let's talk": "Nachricht senden",
+  "PROJECT_HOMEPAGE_DESCRIPTION": "Projekt Beschreibung"
 }
