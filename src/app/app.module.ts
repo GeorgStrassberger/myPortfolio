@@ -26,6 +26,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { PopupComponent } from './components/popup/popup.component';
+import { SlopeComponent } from './components/slope/slope.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -53,6 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PopupComponent,
     ContactButton,
     ProjectButton,
+    SlopeComponent,
   ],
   imports: [
     BrowserModule,

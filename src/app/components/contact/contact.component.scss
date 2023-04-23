@@ -1,12 +1,5 @@
 section {
-  .triangle {
-    background-color: var(--color-white);
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 10rem 0 0 100vw;
-    border-color: transparent transparent transparent var(--color-black);
-  }
+  background-color: var(--color-white);
 
   .outer {
     display: flex;

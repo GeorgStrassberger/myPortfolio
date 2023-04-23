@@ -22,14 +22,14 @@ export class PortfolioService {
       'https://github.com/GeorgStrassberger/El-Pollo-Loco',
       'http://el-pollo-loco.georg-strassberger.de/'
     ),
-    // new Project(
-    //   'Ring of Fire',
-    //   ['Angular', 'Firebase', 'TypeScript'],
-    //   'Is a Carddrinking game, every player has to pick up a card from the stack, and the rulse explain who has to drink.',
-    //   '/assets/images/projects/rof.png',
-    //   'https://github.com/GeorgStrassberger/RingOfFire',
-    //   'http://ring-of-fire.georg-strassberger.de/'
-    // ),
+    new Project(
+      'Ring of Fire',
+      ['Angular', 'Firebase', 'TypeScript'],
+      'Is a Carddrinking game, every player has to pick up a card from the stack, and the rulse explain who has to drink.',
+      '/assets/images/projects/rof.png',
+      'https://github.com/GeorgStrassberger/RingOfFire',
+      'http://ring-of-fire.georg-strassberger.de/'
+    ),
     // new Project(
     //   'Join',
     //   ['JavaScript', 'HTML', 'CSS'],

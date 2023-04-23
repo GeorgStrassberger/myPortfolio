@@ -38,12 +38,38 @@
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  .outer {
-    gap: 3.2rem;
+  section {
+    .outer {
+      gap: 3.2rem;
 
-    .wrapper {
-      right: var(--pad-in-l);
-      width: 2.4rem;
+      .inner {
+        form {
+        }
+      }
+
+      .wrapper {
+        right: var(--pad-in-l);
+        width: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 375.98px) {
+  section {
+    .outer {
+      gap: 3.2rem;
+
+      .inner {
+        form {
+          align-items: flex-start;
+        }
+      }
+
+      .wrapper {
+        right: var(--pad-in-l);
+        width: 2.4rem;
+      }
     }
   }
 }

@@ -165,6 +165,8 @@ section {
   // from Bot
   .bottem-wrapper {
     position: absolute;
+    left: 0;
+    right: 0;
     bottom: 0;
     color: var(--color-white);
     transform: translateY(100%);
@@ -174,15 +176,6 @@ section {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
-
-    .triangle {
-      background-color: transparent;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 10rem 0 0 100vw;
-      border-color: transparent transparent transparent var(--color-black);
-    }
   }
 }
 
