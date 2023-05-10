@@ -7,16 +7,16 @@ import { Project } from './project/project.model';
 export class PortfolioService {
   private projects: Project[] = [
     new Project(
-      'Pokedex',
-      ['Rest-Api', 'JavaScript', 'HTML', 'CSS'],
-      'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      '/assets/images/projects/pokedex.png',
-      'https://github.com/GeorgStrassberger/Pokedex',
-      'http://pokedex.georg-strassberger.de/'
+      'Photography',
+      ['SCSS', 'CSS', 'HTML'],
+      'A Webpage created with SCSS/HTML to lern BEM (Block Element Modifier), to write and read better CSS.',
+      '/assets/images/projects/photography.jpg',
+      'https://github.com/GeorgStrassberger/Photography-Project',
+      'http://photography.georg-strassberger.de/'
     ),
     new Project(
       'El Pollo Loco',
-      ['JavaScript', 'OOP', 'HTML', 'SCSS'],
+      ['JavaScript', 'OOP', 'HTML', 'CSS'],
       'El Pollo Loco is a small 2D Jump & Run Game, to lern the OOP in JavaScript.',
       '/assets/images/projects/epl.png',
       'https://github.com/GeorgStrassberger/El-Pollo-Loco',
@@ -30,14 +30,6 @@ export class PortfolioService {
       'https://github.com/GeorgStrassberger/RingOfFire',
       'http://ring-of-fire.georg-strassberger.de/'
     ),
-    // new Project(
-    //   'Join',
-    //   ['JavaScript', 'HTML', 'CSS'],
-    //   'A Kanban board to create Tasks and following the status of the task.',
-    //   '/assets/images/projects/join.png',
-    //   'https://github.com/abaraev95/Join---Project-Management-System',
-    //   'http://join.georg-strassberger.de/'
-    // ),
     new Project(
       'My Homepage',
       ['Angular', 'TypeScript', 'HTML', 'SCSS'],
@@ -47,12 +39,12 @@ export class PortfolioService {
       'https://www.georg-strassberger.de/'
     ),
     new Project(
-      'Photography',
-      ['SCSS', 'CSS', 'HTML'],
-      'A Webpage created with SCSS/HTML to lern BEM (Block Element Modifier), to write and read better CSS.',
-      '/assets/images/projects/photography.jpg',
-      'https://github.com/GeorgStrassberger/Photography-Project',
-      'http://photography.georg-strassberger.de/'
+      'Pokedex',
+      ['Rest-Api', 'JavaScript', 'HTML', 'CSS'],
+      'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      '/assets/images/projects/pokedex.png',
+      'https://github.com/GeorgStrassberger/Pokedex',
+      'http://pokedex.georg-strassberger.de/'
     ),
     // new Project(
     //   'Drag & Drop',
