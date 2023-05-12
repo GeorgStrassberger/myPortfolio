@@ -7,7 +7,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-
   .links {
     width: clamp(6rem, 50vw, 22rem);
     display: flex;
@@ -15,12 +14,10 @@ footer {
     justify-content: space-between;
     white-space: nowrap;
   }
-
   .top-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     a {
       display: flex;
       border-radius: 0.6rem;
@@ -35,26 +32,23 @@ footer {
         height: 4rem;
       }
     }
-
     a:hover {
       opacity: 0.8;
       transform: translateY(-0.2rem);
     }
   }
-
   .bot-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: var(--sec-font-family);
     font-size: var(--font-size-small);
-
+    margin-top: 1rem;
     a {
       text-decoration: none;
       color: var(--color-white);
       border-bottom: var(--color-black) 0.2rem solid;
     }
-
     a:hover {
       color: var(--color-green);
       border-bottom: var(--color-green) 0.2rem solid;

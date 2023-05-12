@@ -6,7 +6,6 @@ section {
   flex-direction: column;
   overflow: hidden;
   transition: all 125ms ease-in-out;
-
   .top-wrapper {
     background-color: var(--color-white);
     position: absolute;
@@ -25,7 +24,6 @@ section {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
-
     .box {
       position: relative;
       display: flex;
@@ -36,7 +34,6 @@ section {
       background: var(--color-white);
       overflow: hidden;
       cursor: pointer;
-
       &::before {
         content: "";
         position: absolute;
@@ -48,19 +45,16 @@ section {
         animation: borderFadeLeft 0.4s linear 1;
         animation-fill-mode: forwards;
       }
-
       &:hover::before {
         animation: borderFadeRight 0.4s linear 1;
         animation-fill-mode: forwards;
       }
-
       &::after {
         content: "";
         position: absolute;
         inset: 0.4rem;
         background: var(--color-white);
       }
-
       a {
         text-decoration: none;
         position: relative;
@@ -71,13 +65,11 @@ section {
         z-index: 2;
         transition: all 225ms ease-in-out;
       }
-
       &:hover a {
         color: var(--color-green);
       }
     }
   }
-
   // Nav Bar
   .nav-wrapper {
     background-color: var(--color-white);
@@ -93,6 +85,9 @@ section {
     .nav__logo {
       height: 3.5rem;
       cursor: pointer;
+      &:hover {
+        opacity: 0.75;
+      }
     }
     .navAnker {
       display: flex;
@@ -100,13 +95,11 @@ section {
       justify-content: flex-start;
       align-items: center;
       gap: 3rem;
-
       a {
         font-family: var(--sec-font-family);
         font-size: var(--font-size-h3);
         color: var(--color-black);
         text-decoration: none;
-
         &:hover {
           color: var(--color-green);
         }
@@ -124,19 +117,16 @@ section {
         overflow: hidden;
         cursor: crosshair;
       }
-
       .menu__color::-webkit-color-swatch {
         border: none;
         border-radius: 50%;
         padding: 0;
       }
-
       .menu__color::-webkit-color-swatch-wrapper {
         border: none;
         border-radius: 50%;
         padding: 0;
       }
-
       .menu__tanslate {
         display: flex;
         flex-direction: row;
@@ -158,10 +148,12 @@ section {
         height: 3.5rem;
         width: 3.5rem;
         cursor: pointer;
+        &:hover {
+          opacity: 0.75;
+        }
       }
     }
   }
-
   // from Bot
   .bottem-wrapper {
     position: absolute;
