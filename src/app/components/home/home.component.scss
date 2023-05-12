@@ -2,7 +2,7 @@ section {
   position: relative;
   background-color: var(--color-white);
   color: var(--color-black);
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,8 +35,8 @@ section {
       // AnimationHeadlineColor
       animation-name: headline-color, headline-weight;
       animation-direction: alternate, alternate;
-      animation-duration: 2s, 1s; //2s
-      animation-delay: 1s, 0.25s;
+      animation-duration: 2s, 1s;
+      animation-delay: 1s, 0.1s;
       animation-timing-function: linear, linear;
       animation-iteration-count: 1, 1;
       animation-fill-mode: both, both;

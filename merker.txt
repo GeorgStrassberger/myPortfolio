@@ -1,5 +1,12 @@
 
-1) schriftgröße Send Message Butten anpassen
+
+1) About me test anpassen und übersetzten
+1.5) CSS Variablen in SCSS Variablen ändern (dann muss der Browser nicht rechnen)
+2) Project texte anpassen und übersetzten
+3) Bilder skallieren zum laden optimeren (größe)
+4) Project bilder auf 4/3 anpassen wäre schöner
+
+DONE 1) schriftgröße Send Message Butten anpassen
 
 2 ) projekt anordung sortieren
 
