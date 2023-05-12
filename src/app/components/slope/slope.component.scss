@@ -1,14 +1,13 @@
 @use "sass:math";
 $slope-incline: math.asin(0.1); //0.1 = 10%
-
 section {
   height: 10vw;
   background-image: linear-gradient(
     $slope-incline,
-    var(--color-black) 49.5%,
-    transparent 50.5%
+    var(--color-black) 49.7%,
+    transparent 50.3%
   );
   background-repeat: no-repeat;
   background-position: center 100%;
-  background-size: 100vw 10vw;
+  background-size: 100dvw;
 }
