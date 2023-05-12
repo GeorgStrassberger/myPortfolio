@@ -4,8 +4,8 @@
   // Fonts
   --header-height: 6rem;
   --footer-height: 10rem;
-  --main-font-family: "Syne", sans-serif;
-  --sec-font-family: "Overpass", sans-serif;
+  --main-font-family: "Syne";
+  --sec-font-family: "Overpass";
   --font-size-h1: clamp(2.4rem, 7vw, 13rem);
   --font-size-h2: clamp(3.2rem, 6vw, 7.8rem);
   --font-size-h3: clamp(2rem, 2vw, 3rem);
@@ -44,7 +44,6 @@ html {
 body {
   font-family: var(--main-font-family);
   color: var(--color-black);
-
   &::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari and Opera */
