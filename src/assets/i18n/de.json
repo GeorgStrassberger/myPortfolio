@@ -1,6 +1,6 @@
 {
   "About me": "Über mich",
-  "I am a Front-end deverloper based in Stuttgart, Germany. I help designers and companies to bring their ideas to real life. Creativity and logical thinking are skills that I have developed to connect ideas into quality products.": "Ich bin ein Frontend-Entwickler mit Sitz in Stuttgart, Deutschland. Ich helfe Designern und Unternehmen, ihre Ideen in die Realität umzusetzen. Kreativität und logisches Denken sind Fähigkeiten, die ich entwickelt habe, um Ideen zu Qualitätsprodukten zu verbinden.",
+  "I am a Front-end developer based in Stuttgart, Germany. I have always been interested in IT and with a pursued professional training with the goal of being able to create real web projects. Through creative and logical thinking, I am happy to help you developed and implement your products.": "Ich bin ein Frontend-Entwickler mit Sitz in Stuttgart, Deutschland. Ich habe mich schon immer für IT interessiert und eine Berufsausbildung mit dem Ziel verfolgt, echte Webprojekte erstellen zu können. Durch kreatives und logisches Denken helfe ich Ihnen gerne bei der Entwicklung und Umsetzung Ihrer Produkte.",
   "If you think I’d be a good match for your projects, contact me!": "Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
   "Say Hi!": "Sag Hallo!",
   "Want to discuss a new project?": "Möchten Sie ein neues Projekt besprechen?",
@@ -26,8 +26,6 @@
   "Feel free to try out my latest developn´ment projects and look into their code.": "Probieren Sie gerne meine neuesten Entwicklungsprojekte aus und schauen Sie sich deren Code an.",
   "Open": "Öffnen",
   "My skills": "Fähigkeiten",
-  "Send a message": "Nachricht senden",
-  "Let's talk": "Nachricht senden",
   "PROJECT_PHOTOGRAPHY_DESCRIPTION": "Eine Webseite rein in HTML & SCSS, um die BEM (Block Element Modifier) Schreibweise zu lernen, um besseren/lesbaren CSS-Code zu schreiben.",
   "PROJECT_ELPOLLO_DESCRIPTION": "El Pollo Loco ist ein 2D Jump & Run Game. Basierend auf der OOP in JavaScript.",
   "PROJECT_RING_DESCRIPTION": "Fantastisches Trinkspiel für Partys. Das die Spieler an einem oder mehreren Geräten gleichzeitig spielen können.",
