@@ -28,5 +28,9 @@
   "My skills": "My skills",
   "Send a message": "Send a message",
   "Let's talk": "Let's talk",
-  "PROJECT_HOMEPAGE_DESCRIPTION": "PROJECT DESCRIPTION"
+  "PROJECT_PHOTOGRAPHY_DESCRIPTION": "A Webpage created with SCSS/HTML to lern BEM (Block Element Modifier), to write better CSS/SASS code.",
+  "PROJECT_ELPOLLO_DESCRIPTION": "El Pollo Loco is a 2D Jump & Run Game. Base on OOP in JavaScript.",
+  "PROJECT_RING_DESCRIPTION": "Awesome drinking game for parties. That players can play on one or more devices at the same time.",
+  "PROJECT_HOMEPAGE_DESCRIPTION": "My own homepage created with the Angular Framework",
+  "PROJECT_POKEDEX_DESCRIPTION": "Based on the PokéAPI a library that provides and catalogues pokemon information."
 }

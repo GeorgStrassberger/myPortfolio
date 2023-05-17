@@ -9,7 +9,7 @@ export class PortfolioService {
     new Project(
       'Photography',
       ['SCSS', 'CSS', 'HTML'],
-      'A Webpage created with SCSS/HTML to lern BEM (Block Element Modifier), to write and read better CSS.',
+      'PROJECT_PHOTOGRAPHY_DESCRIPTION',
       '/assets/images/projects/photography.jpg',
       'https://github.com/GeorgStrassberger/Photography-Project',
       'http://photography.georg-strassberger.de/'
@@ -17,7 +17,7 @@ export class PortfolioService {
     new Project(
       'El Pollo Loco',
       ['JavaScript', 'OOP', 'HTML', 'CSS'],
-      'El Pollo Loco is a small 2D Jump & Run Game, to lern the OOP in JavaScript.',
+      'PROJECT_ELPOLLO_DESCRIPTION',
       '/assets/images/projects/epl.png',
       'https://github.com/GeorgStrassberger/El-Pollo-Loco',
       'http://el-pollo-loco.georg-strassberger.de/'
@@ -25,7 +25,7 @@ export class PortfolioService {
     new Project(
       'Ring of Fire',
       ['Angular', 'Firebase', 'TypeScript'],
-      'Is a Carddrinking game, every player has to pick up a card from the stack, and the rulse explain who has to drink.',
+      'PROJECT_RING_DESCRIPTION',
       '/assets/images/projects/rof.png',
       'https://github.com/GeorgStrassberger/RingOfFire',
       'http://ring-of-fire.georg-strassberger.de/'
@@ -41,7 +41,7 @@ export class PortfolioService {
     new Project(
       'Pokedex',
       ['Rest-Api', 'JavaScript', 'HTML', 'CSS'],
-      'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      'PROJECT_POKEDEX_DESCRIPTION',
       '/assets/images/projects/pokedex.png',
       'https://github.com/GeorgStrassberger/Pokedex',
       'http://pokedex.georg-strassberger.de/'
