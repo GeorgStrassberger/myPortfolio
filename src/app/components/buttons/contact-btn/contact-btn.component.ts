@@ -3,8 +3,8 @@ import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
   selector: 'contact-btn',
-  template: `<button (click)="navService.forceNavigate('contact')">
-    {{ btnText | translate }}
+  template: `<button translate (click)="navService.forceNavigate('contact')">
+    {{ btnText }}
   </button>`,
   styleUrls: [
     './contact-btn.component.scss',
