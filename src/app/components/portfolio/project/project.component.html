@@ -5,7 +5,20 @@
         <img src="../../../../assets/images/arrows/arrow7.png" alt="arrow" />
       </div>
     </div>
-    <img src="{{ project.imagePath }}" alt="{{ project.title }}" />
+    <picture>
+      <source
+        srcset="
+          {{ project.imagePath }}.webp 600w
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          {{ project.imagePath }}.jpeg 600w
+        "
+      />
+      <img src="{{ project.imagePath }}.jpeg" alt="{{ project.title }}" />
+    </picture>
   </div>
   <div class="wrapper-info">
     <span>{{ index | fillup : 2 }}/{{ projects.length | fillup : 2 }}</span>
@@ -21,8 +34,16 @@
         {{ project.description | translate }}
       </div>
       <div class="links">
-        <a href="{{ project.github }}" target="_blank" title="open repositorie">Github</a>
-        <a translate href="{{ project.url }}" target="_blank" title="open {{ project.title }}">Open</a>
+        <a href="{{ project.github }}" target="_blank" title="open repositorie"
+          >Github</a
+        >
+        <a
+          translate
+          href="{{ project.url }}"
+          target="_blank"
+          title="open {{ project.title }}"
+          >Open</a
+        >
       </div>
     </div>
   </div>

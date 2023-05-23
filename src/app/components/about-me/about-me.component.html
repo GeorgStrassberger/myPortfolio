@@ -18,6 +18,22 @@
   </div>
   <div class="wrapper-img">
     <div class="frame"></div>
-    <img src="../../../assets/images/fotos/strassberger_no_bg.png" alt="foto" />
+    <picture>
+      <source
+        srcset="
+          ../../../assets/images/fotos/strassberger_no_bg.300w-400h.webp 300w
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ../../../assets/images/fotos/strassberger_no_bg.300w-400h.png 300w
+        "
+      />
+      <img
+        src="../../../assets/images/fotos/strassberger_no_bg.300w-400h.png"
+        alt="portait"
+      />
+    </picture>
   </div>
 </section>

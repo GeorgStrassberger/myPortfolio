@@ -10,7 +10,7 @@ export class PortfolioService {
       'Photography',
       ['SCSS', 'CSS', 'HTML'],
       'PROJECT_PHOTOGRAPHY_DESCRIPTION',
-      '/assets/images/projects/photography.jpg',
+      '/assets/images/projects/photography.620w-460h',
       'https://github.com/GeorgStrassberger/Photography-Project',
       'http://photography.georg-strassberger.de/'
     ),
@@ -18,7 +18,7 @@ export class PortfolioService {
       'El Pollo Loco',
       ['JavaScript', 'OOP', 'HTML', 'CSS'],
       'PROJECT_ELPOLLO_DESCRIPTION',
-      '/assets/images/projects/epl.png',
+      '/assets/images/projects/epl.620w-460h',
       'https://github.com/GeorgStrassberger/El-Pollo-Loco',
       'http://el-pollo-loco.georg-strassberger.de/'
     ),
@@ -26,7 +26,7 @@ export class PortfolioService {
       'Ring of Fire',
       ['Angular', 'Firebase', 'TypeScript'],
       'PROJECT_RING_DESCRIPTION',
-      '/assets/images/projects/rof.png',
+      '/assets/images/projects/rof.620w-460h',
       'https://github.com/GeorgStrassberger/RingOfFire',
       'http://ring-of-fire.georg-strassberger.de/'
     ),
@@ -34,7 +34,7 @@ export class PortfolioService {
       'My Homepage',
       ['Angular', 'TypeScript', 'HTML', 'SCSS'],
       'PROJECT_HOMEPAGE_DESCRIPTION',
-      '/assets/images/projects/myPage.jpg',
+      '/assets/images/projects/myPage.620w-460h',
       'https://github.com/GeorgStrassberger/myPortfolio',
       'https://www.georg-strassberger.de/'
     ),
@@ -42,7 +42,7 @@ export class PortfolioService {
       'Pokedex',
       ['Rest-Api', 'JavaScript', 'HTML', 'CSS'],
       'PROJECT_POKEDEX_DESCRIPTION',
-      '/assets/images/projects/pokedex.png',
+      '/assets/images/projects/pokedex.620w-460h',
       'https://github.com/GeorgStrassberger/Pokedex',
       'http://pokedex.georg-strassberger.de/'
     ),
