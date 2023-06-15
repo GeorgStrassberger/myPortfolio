@@ -7,6 +7,14 @@ import { Project } from './project/project.model';
 export class PortfolioService {
   private projects: Project[] = [
     new Project(
+      'SlackClone',
+      ['Angular', 'Firebase', 'ngMaterial'],
+      'PROJECT_SLACK_DESCRIPTION',
+      '/assets/images/projects/slackclone.620w-460h',
+      'https://github.com/ImForsaken/My-slack-clone',
+      'https://slackclone.georg-strassberger.de'
+    ),
+    new Project(
       'Photography',
       ['SCSS', 'CSS', 'HTML'],
       'PROJECT_PHOTOGRAPHY_DESCRIPTION',
@@ -46,14 +54,6 @@ export class PortfolioService {
       'https://github.com/GeorgStrassberger/Pokedex',
       'http://pokedex.georg-strassberger.de/'
     ),
-    // new Project(
-    //   'Drag & Drop',
-    //   ['TypeScript', 'OOP', 'HTML', 'CSS'],
-    //   'You can create Tasks and change the status form Active to Finished with drag & drop.',
-    //   '/assets/images/projects/ddp.jpg',
-    //   'https://github.com/GeorgStrassberger/Drag-Drop-Project',
-    //   'http://dragdrop.georg-strassberger.de/'
-    // ),
   ];
 
   constructor() {}

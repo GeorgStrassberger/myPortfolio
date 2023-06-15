@@ -32,5 +32,6 @@
   "PROJECT_ELPOLLO_DESCRIPTION": "El Pollo Loco ist ein 2D Jump & Run Game. Basierend auf der OOP in JavaScript.",
   "PROJECT_RING_DESCRIPTION": "Fantastisches Trinkspiel für Partys. Das die Spieler an einem oder mehreren Geräten gleichzeitig spielen können.",
   "PROJECT_HOMEPAGE_DESCRIPTION": "Meine eigene Homepage erstellt mit dem Angular Framework",
-  "PROJECT_POKEDEX_DESCRIPTION": "Basierend auf der PokéAPI, einer Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+  "PROJECT_POKEDEX_DESCRIPTION": "Basierend auf der PokéAPI, einer Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+  "PROJECT_SLACK_DESCRIPTION": "SlackClone ist eine webbasierte Kopie eines Instant-Messaging-Dienstes. Das Projekt besteht darin, als Gruppe zusammenzuarbeiten, um eine effiziente Zusammenarbeit zu ermöglichen."
 }
